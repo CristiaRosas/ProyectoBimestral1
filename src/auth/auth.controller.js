@@ -13,27 +13,27 @@ export const  login = async(req, res) => {
 
         if(!user){
             return res.status(400).json({
-                msg: 'Incorrect credentials, Email does not exist in the database'
+                msg: 'Credenciales incorrectas, el correo electrónico no existe en la base de datos.'
             });
         }
 
         if(!user.estado){
             return res.status(400).json({
-                msg: 'The user does not exist in the database'
+                msg: 'El usuario no existe en la base de datos.'
             });
         }
 
         const validPassword = await verify(user.password, password);
         if(!validPassword){
             return res.status(400).json({
-                msg: 'The password is incorrect'
+                msg: 'La contraseña es incorrecta'
             })
         }
 
         const token = await generarJWT(user.id);
 
         res.status(200).json({
-            msg: 'Login successful',
+            msg: 'Inicio de sesión exitoso',
             userDetails: {
                 username: user.username,
                 token: token,
@@ -44,7 +44,7 @@ export const  login = async(req, res) => {
     } catch (e) {
         console.log(e);
         res.status(500).json({
-            message: "Server error",
+            message: "error del servidor",
             error: e.message
         })
     }
@@ -65,7 +65,7 @@ export const registerUser = async (req, res) => {
         })
 
         return res.status(201).json({
-            message: "User registered successfully",
+            message: "Usuario registrado exitosamente",
             userDetails: {
                 name: data.name,
                 user: user.email,
@@ -75,7 +75,7 @@ export const registerUser = async (req, res) => {
     } catch (error) {
         console.log(error);
         return res.status(500).json({
-            message: "User could not register",
+            message: "El usuario no pudo registrarse",
             error: error.message
         })
     }

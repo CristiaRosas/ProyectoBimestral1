@@ -1,12 +1,12 @@
 import {Router} from "express";
 import {check} from "express-validator";
-import { updateUser, updatePassword, getUserById} from './user.controller.js';
+import { updateUser, updatePassword, getUserById, getUsers} from './user.controller.js';
 import {existeUsuarioById} from '../helpers/db.validator.js';
 import {validarCampos} from '../middlewares/validar-campos.js';
 
-
 const router = Router();
 
+router.get("/", getUsers);
 
 router.get(
     "/BuscarUser/:id",

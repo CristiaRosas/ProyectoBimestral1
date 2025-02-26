@@ -2,6 +2,31 @@ import { response, request } from "express";
 import {hash} from "argon2";
 import User from './user.model.js';
 
+export const getUsers = async (req = request, res = response) => {
+    try {
+        const { limite = 10, desde = 0 } = req.query;
+        const query = { estado: true };
+        const [total, users] = await Promise.all([
+            User.countDocuments(query),
+            User.find(query)
+                .skip(Number(desde))
+                .limit(Number(limite))
+        ]);
+ 
+        res.status(200).json({
+            success: true,
+            total,
+            users
+        });
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            message: "Error al obtener el usuario",
+            error
+        });
+    }
+};
+
 export const getUserById = async (req, res) => {
     try {
     
@@ -12,7 +37,7 @@ export const getUserById = async (req, res) => {
         if(!user){
             return res.status(404).json({
                 succes: false,
-                msg: 'User not found'
+                msg: 'Usuario no encontrado'
             })
         }
 
@@ -23,7 +48,7 @@ export const getUserById = async (req, res) => {
     } catch (error) {
         res.status(500).json({
             succes: false,
-            msj: "Error getting user",
+            msj: "Error al obtener usuario",
             error
         })
     }
@@ -43,55 +68,13 @@ export const updateUser = async (req, res  = response) => {
 
         res.status(200).json({
             succes: true,
-            msj: 'User updated successfully',
+            msj: 'Usuario actualizado con éxito',
             user
         })
     } catch (error) {
         res.status(500).json({
             succes: false,
-            msj: "Error updating user",
-            error
-        })
-    }
-}
-
-
-export const asignarCurso = async (req, res) => {
-    try {
-        const {id} = req.params;
-        const data = req.body;
-
-        const course = await Course.findOne({name: data.name});   
-
-        if(!course){
-            return res.status(404).json({
-                succes: false,
-                message: 'This course does not exist'
-            })
-        }
-
-        const updatedUser = await User.findByIdAndUpdate(id).populate('keeper', 'nameCourse' );
-
-        if (updatedUser.keeper.length >= 3) {
-            return res.status(400).json({
-                success: false,
-                message: 'The user cannot have more than 3 courses assigned'
-            });
-        }       
-
-        updatedUser.keeper.push([course._id]);
-        await updatedUser.save();
-
-        res.status(200).json({
-            success: true,
-            message: 'Course assigned correctly',
-            user: updatedUser
-        });
-
-    } catch (error) {
-        res.status(500).json({
-            succes: false,
-            msg: 'Error assigning course',
+            msj: "Error al actualizar usuario",
             error
         })
     }

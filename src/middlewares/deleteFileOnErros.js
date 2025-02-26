@@ -8,7 +8,7 @@ export const deleteFileOnError = async (err, req, res, next) => {
             await fs.unlink(filePath);
 
         }catch(error){
-            console.error('Error deleting file: ', error)
+            console.error('Error al eliminar el archivo: ', error)
         }
 
 

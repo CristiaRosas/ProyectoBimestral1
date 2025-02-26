@@ -5,7 +5,7 @@ export const esRoleValido = async(role = '') =>{
     const existeRol = await Role.findOne({ role });
  
     if(!existeRol){
-        throw new Error(`The role ${role} does not exist in the database`);
+        throw new Error(`El role ${role} does not exist in the database`);
     }
    
 }
@@ -14,7 +14,7 @@ export const existeEmail = async(correo = '') =>{
     const existeEmail = await Usuario.findOne({ correo });
  
     if(!existeEmail){
-        throw new Error(`The email ${correo} already exists in the database`)
+        throw new Error(`el correo electrónico ${correo} already exists in the database`)
     }
 }
 

@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "2239a139-ad34-4380-bc2b-8413ed487efe",
+		"name": "UserVentas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37413747"
+	},
+	"item": [
+		{
+			"name": "Buscar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/Ventas/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"Ventas",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditarUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Kevin\",\r\n    \"surname\": \"Oxcal\",\r\n    \"username\": \"Kev\",\r\n    \"email\": \"kev@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/Ventas/v1/users/67bf71aaa4f0078e4885832e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"Ventas",
+						"v1",
+						"users",
+						"67bf71aaa4f0078e4885832e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

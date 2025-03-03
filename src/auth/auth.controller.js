@@ -1,4 +1,4 @@
-import User from '../users/user.model.js';
+import Usuario from '../users/user.model.js';
 import { hash, verify } from 'argon2';
 import { generarJWT } from '../helpers/generate-jwt.js';
 
@@ -7,7 +7,7 @@ export const  login = async(req, res) => {
 
     try {
 
-        const user = await User.findOne({
+        const user = await Usuario.findOne({
             $or: [{email}, {username}]
         }) 
 
@@ -50,33 +50,44 @@ export const  login = async(req, res) => {
     }
 }
 
-export const registerUser = async (req, res) => {
+export const register = async (req, res) => {
     try {
-        const data = req.body;
+        const { name, surname, username, email, password, role = 'CLIENT_ROLE' } = req.body;
 
-        const encryptedPassword = await hash(data.password);
+        if (!name || !surname || !username || !email || !password) {
+            return res.status(400).json({ message: "Faltan datos en la request" });
+        }
 
-        const user = await User.create({
-            name: data.name,
-            surname: data.surname,
-            username: data.username,
-            email: data.email,
+        const existingUser = await Usuario.findOne({ $or: [{ email }, { username }] });
+        if (existingUser) {
+            return res.status(400).json({ message: "Usuario ya existente en la base de datos" });
+        }
+
+        const encryptedPassword = await hash(password);
+
+        const user = new Usuario({
+            name,
+            surname,
+            username,
+            email,
             password: encryptedPassword,
-        })
+            role,
+            estado: true
+        });
+
+        await user.save();
 
         return res.status(201).json({
-            message: "Usuario registrado exitosamente",
+            message: `El usuario ${user.name} fue registrado con exito!`,
             userDetails: {
-                name: data.name,
-                user: user.email,
-            }
-        })
-
+                email: user.email,
+            },
+        });
     } catch (error) {
-        console.log(error);
+        console.error(error);
         return res.status(500).json({
-            message: "El usuario no pudo registrarse",
-            error: error.message
-        })
+            message: "Hubo un error al registrar el usuario",
+            error: error.message,
+        });
     }
-}
+};

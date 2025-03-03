@@ -1,17 +1,21 @@
 import {Router} from "express";
 import {check} from "express-validator";
-import { updateUser, updatePassword, getUserById, getUsers} from './user.controller.js';
+import { updateUser, updatePassword, getUserById, getUsers, updateStatus, deleteUser } from './user.controller.js';
 import {existeUsuarioById} from '../helpers/db.validator.js';
 import {validarCampos} from '../middlewares/validar-campos.js';
+import { validarJWT } from "../middlewares/validar-jwt.js";
+import { tieneRole } from "../middlewares/validar-roles.js";
 
 const router = Router();
 
 router.get("/", getUsers);
 
 router.get(
-    "/BuscarUser/:id",
+    "/getUserById/:id",
     [
-        check("id", "It is not a valid Id").isMongoId(),
+        validarJWT,
+        tieneRole("ADMIN_ROLE"),
+        check("id", "id invalid!").isMongoId(),
         check("id").custom(existeUsuarioById),
         validarCampos
     ],
@@ -19,26 +23,51 @@ router.get(
 )
 
 router.put(
-    "/:id",
+    "/updateUser/:id",
     [
-        check("id", "It is Not a valid Id").isMongoId(),
+        validarJWT,
+        tieneRole("ADMIN_ROLE", "CLIENT_ROLE"),
+        check("id", "id invalid!").isMongoId(),
         check("id").custom(existeUsuarioById),
         validarCampos
     ],
     updateUser
 )
 
-
-
 router.put(
-    "/passwordUpdate/:id",
+    "/updatePassword/:id",
     [
-        check("id", "It is not a valid Id").isMongoId(),
+        validarJWT,
+        tieneRole("ADMIN_ROLE"),
+        check("id", "id invalid!").isMongoId(),
         check("id").custom(existeUsuarioById),
         validarCampos
     ],
     updatePassword
-) 
+)
 
+router.put(
+    "/:id",
+    [
+        validarJWT,
+        tieneRole("ADMIN_ROLE"),
+        check("id", "id invalid!").isMongoId(),
+        check("id").custom(existeUsuarioById),
+        validarCampos
+    ],
+    updateStatus
+)
+
+router.delete(
+    "/deleteUser/:id",
+    [
+        validarJWT,
+        tieneRole("ADMIN_ROLE", "CLIENT_ROLE"),
+        check("id", "id invalid!").isMongoId(),
+        check("id").custom(existeUsuarioById),
+        validarCampos
+    ],
+    deleteUser
+)
 
 export default router;

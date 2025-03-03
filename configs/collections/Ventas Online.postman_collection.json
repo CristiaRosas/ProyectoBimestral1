@@ -1,0 +1,261 @@
+{
+	"info": {
+		"_postman_id": "5e655fa0-eaa4-4f17-9580-0ef92835a814",
+		"name": "Ventas Online",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37413747"
+	},
+	"item": [
+		{
+			"name": "Auth ventas",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Kevin\",\r\n  \"surname\": \"Reyes\",\r\n  \"username\": \"kev\",\r\n  \"email\": \"kev@gmail.com\",\r\n  \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/Ventas/v1/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"Ventas",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"kev@gmail.com\",\r\n  \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/Ventas/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"Ventas",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User ventas",
+			"item": [
+				{
+					"name": "ObtenerUsuarios",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerUsuariosId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDA5ODE1MTEsImV4cCI6MTc0MDk4NTExMX0.rSYZkLhJ8DqwGOeNv-5cwi7PA3cjgY1bPoSYaeFLFwo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3003/Ventas/v1/users/getUserById/67c53736bed49298b305c6a4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"Ventas",
+								"v1",
+								"users",
+								"getUserById",
+								"67c53736bed49298b305c6a4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditarUser",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDA5ODIyNzUsImV4cCI6MTc0MDk4NTg3NX0.cG3f0tuBMbeK2mqRwWDNr5LqMQ1c0_pzuIHV3uIzFqk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Jonathan\",\r\n  \"surname\": \"Alvarez\",\r\n  \"username\": \"jonas\",\r\n  \"email\": \"jonas@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/Ventas/v1/users/updateUser/67c53736bed49298b305c6a4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"Ventas",
+								"v1",
+								"users",
+								"updateUser",
+								"67c53736bed49298b305c6a4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditarContraseña",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDA5ODIyNzUsImV4cCI6MTc0MDk4NTg3NX0.cG3f0tuBMbeK2mqRwWDNr5LqMQ1c0_pzuIHV3uIzFqk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"87654321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/Ventas/v1/users/updatePassword/67c5380b4e7ae2a02504c0f7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"Ventas",
+								"v1",
+								"users",
+								"updatePassword",
+								"67c5380b4e7ae2a02504c0f7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditarEstado",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDA5ODQ1NzcsImV4cCI6MTc0MDk4ODE3N30.MwyuZF7mhMPQh5E_KvkOA0vmEGSWGzDUXgJfg7osdws",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/Ventas/v1/users/67c5380b4e7ae2a02504c0f7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"Ventas",
+								"v1",
+								"users",
+								"67c5380b4e7ae2a02504c0f7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDA5ODUxNzQsImV4cCI6MTc0MDk4ODc3NH0.RsE1g-sM7ZPmW-aiXkK3-3zR406JtkZ1WxiVkY_Q4Q4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3003/Ventas/v1/users/deleteUser/67c5380b4e7ae2a02504c0f7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"Ventas",
+								"v1",
+								"users",
+								"deleteUser",
+								"67c5380b4e7ae2a02504c0f7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

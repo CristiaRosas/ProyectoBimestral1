@@ -4,11 +4,8 @@ import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
-
-import limiter from '../src/middlewares/validar-cant-peticiones.js'
-
+import limiter from '../src/middlewares/validar-cant-peticiones.js';
 import  { dbConnection } from './mongo.js';
-
 import authRoutes from '../src/auth/auth.routes.js';
 import userRoutes from '../src/users/user.routes.js';
 

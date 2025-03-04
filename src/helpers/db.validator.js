@@ -22,6 +22,38 @@ export const existeUsuarioById = async (id = '') => {
     const existeUsuario = await User.findById(id);
 
     if(!existeUsuario){
-        throw new Error(`The ${id} does not exist`);
+        throw new Error(`El ${id} no existe`);
+    }
+}
+
+export const existeProductById = async (id = '') => {
+    const existeProduct = await Product.findById(id);
+
+    if (!existeProduct) {
+        throw new Error(`id ${id} no existe!`);
+    }
+}
+
+export const existeProductByName = async (name = '') => {
+    const existeProduct = await Product.findById(name);
+
+    if (!existeProduct) {
+        throw new Error(`nombre ${name} no existe!`);
+    }
+}
+
+export const existeCategoryById = async (id = '') => {
+    const existeCategory = await Category.findById(id);
+
+    if (!existeCategory) {
+        throw new Error(`id ${id} no existe!`);
+    }
+}
+
+export const existeFacturaById = async (id = '') => {
+    const existeFactura = await Factura.findById(id);
+
+    if (!existeFactura) {
+        throw new Error(`id ${id} no existe!`);
     }
 }

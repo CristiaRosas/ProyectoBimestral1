@@ -52,27 +52,19 @@ export const  login = async(req, res) => {
 
 export const register = async (req, res) => {
     try {
-        const { name, surname, username, email, password, role = 'CLIENT_ROLE' } = req.body;
+        const data = req.body;
 
-        if (!name || !surname || !username || !email || !password) {
-            return res.status(400).json({ message: "Faltan datos en la request" });
-        }
+        const encryptedPassword = await hash (data.password);
 
-        const existingUser = await Usuario.findOne({ $or: [{ email }, { username }] });
-        if (existingUser) {
-            return res.status(400).json({ message: "Usuario ya existente en la base de datos" });
-        }
-
-        const encryptedPassword = await hash(password);
-
-        const user = new Usuario({
-            name,
-            surname,
-            username,
-            email,
+        const user = await Usuario.create({
+            
+            name: data.name,
+            surname: data.surname,
+            username: data.username,
+            email: data.email,
+            phone: data.phone,
             password: encryptedPassword,
-            role,
-            estado: true
+            role: data.role,
         });
 
         await user.save();

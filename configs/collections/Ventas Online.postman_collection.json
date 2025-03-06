@@ -254,6 +254,208 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Reporte Excel",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Productos ventas",
+			"item": [
+				{
+					"name": "AgregarProductos",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEyMjkyNjIsImV4cCI6MTc0MTIzMjg2Mn0.5cqmT73jqHAgAz50UmdeZn4zMdC5NYZgB-xE4QsVd0k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Prueba de eliminar\",\r\n  \"description\": \"cerealres\",\r\n  \"price\": 10.99,\r\n  \"stock\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/ventas/v1/productos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"ventas",
+								"v1",
+								"productos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerProductos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEyMjgyMDcsImV4cCI6MTc0MTIzMTgwN30.eVmZCCj4JQ3DWFM96akVpjI6VBFTc53XZN32fp7ZJ84",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3003/Ventas/v1/productos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"Ventas",
+								"v1",
+								"productos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerProductoId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEyMjgyMDcsImV4cCI6MTc0MTIzMTgwN30.eVmZCCj4JQ3DWFM96akVpjI6VBFTc53XZN32fp7ZJ84",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3003/Ventas/v1/productos/getProductoById/67c90b5ca4041d9bfa357ec9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"Ventas",
+								"v1",
+								"productos",
+								"getProductoById",
+								"67c90b5ca4041d9bfa357ec9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerProductoPorNombre",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEyMjkyNjIsImV4cCI6MTc0MTIzMjg2Mn0.5cqmT73jqHAgAz50UmdeZn4zMdC5NYZgB-xE4QsVd0k",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3003/Ventas/v1/productos/getProductoByName/Grafica RTX 4060",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"Ventas",
+								"v1",
+								"productos",
+								"getProductoByName",
+								"Grafica RTX 4060"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarProducto",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEyMjkyNjIsImV4cCI6MTc0MTIzMjg2Mn0.5cqmT73jqHAgAz50UmdeZn4zMdC5NYZgB-xE4QsVd0k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Samsung S22 plus\",\r\n  \"description\": \"Celular\",\r\n  \"price\": 300.99,\r\n  \"stock\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/Ventas/v1/productos/67c9086ae2eef7e48210beff",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"Ventas",
+								"v1",
+								"productos",
+								"67c9086ae2eef7e48210beff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarProducto",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEyMjkyNjIsImV4cCI6MTc0MTIzMjg2Mn0.5cqmT73jqHAgAz50UmdeZn4zMdC5NYZgB-xE4QsVd0k",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3003/Ventas/v1/productos/deleteProduct/67c90e3be17c1ac7293b765d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"Ventas",
+								"v1",
+								"productos",
+								"deleteProduct",
+								"67c90e3be17c1ac7293b765d"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}

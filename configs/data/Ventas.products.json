@@ -1,0 +1,54 @@
+[{
+  "_id": {
+    "$oid": "67c9086ae2eef7e48210beff"
+  },
+  "name": "Samsung S22 plus",
+  "description": "Celular",
+  "price": 300.99,
+  "stock": 3,
+  "sold": 0,
+  "outOfStock": false,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-06T02:28:58.232Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-06T02:52:15.914Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c90b5ca4041d9bfa357ec9"
+  },
+  "name": "Grafica RTX 4060",
+  "description": "Pieza de computadora",
+  "price": 500.99,
+  "stock": 3,
+  "sold": 0,
+  "outOfStock": false,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-06T02:41:32.259Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-06T02:41:32.259Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c90e3be17c1ac7293b765d"
+  },
+  "name": "Prueba de eliminar",
+  "description": "cerealres",
+  "price": 10.99,
+  "stock": 3,
+  "sold": 0,
+  "outOfStock": false,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-06T02:53:47.141Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-06T02:54:15.558Z"
+  }
+}]

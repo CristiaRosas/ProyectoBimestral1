@@ -9,6 +9,7 @@ import  { dbConnection } from './mongo.js';
 import authRoutes from '../src/auth/auth.routes.js';
 import userRoutes from '../src/users/user.routes.js';
 import productoRoutes from '../src/products/producto.routes.js';
+import categoryRoutes from '../src/categorias/category.routes.js';
 
 const middlewares = (app) => {
     app.use(express.urlencoded({extended : false}));
@@ -23,6 +24,7 @@ const routes = (app) => {
     app.use('/Ventas/v1/auth', authRoutes);
     app.use('/Ventas/v1/users', userRoutes);
     app.use('/Ventas/v1/productos', productoRoutes);
+    app.use('/Ventas/v1/categorias', categoryRoutes);
 };
 
 export const conetarDB = async() => {

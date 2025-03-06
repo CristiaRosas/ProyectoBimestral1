@@ -16,7 +16,7 @@ const CategorySchema = Schema({
     productos: [
         {
             type: Schema.Types.ObjectId,
-            ref: 'product'
+            ref: 'Product'
         }
     ],
 
@@ -31,4 +31,4 @@ const CategorySchema = Schema({
     versionKey: false
 });
 
-export default model('category', CategorySchema);
+export default model('Category', CategorySchema);

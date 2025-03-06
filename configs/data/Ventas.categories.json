@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "67c9300a0097868624cd658b"
+  },
+  "name": "Gamer",
+  "description": "Piezas de computadoras de alta gama",
+  "productos": [],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-06T05:18:02.019Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-06T05:18:02.019Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c93822f14d593b3814d4c9"
+  },
+  "name": "Telefonia",
+  "description": "telefonos inteligentes",
+  "productos": [],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-06T05:52:34.318Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-06T05:52:34.318Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c939f2f14d593b3814d4e6"
+  },
+  "name": "Sin categoria",
+  "description": "productos sin categoría",
+  "productos": [],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-06T06:00:18.400Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-06T06:00:18.403Z"
+  }
+}]

@@ -23,15 +23,15 @@
   "name": "Grafica RTX 4060",
   "description": "Piezas de computadoras de alta gama",
   "price": 500.99,
-  "stock": 3,
-  "sold": 0,
+  "stock": 0,
+  "sold": 3,
   "outOfStock": false,
   "estado": true,
   "createdAt": {
     "$date": "2025-03-06T02:41:32.259Z"
   },
   "updatedAt": {
-    "$date": "2025-03-06T02:41:32.259Z"
+    "$date": "2025-03-07T06:02:01.445Z"
   }
 },
 {

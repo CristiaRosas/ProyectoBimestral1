@@ -1,0 +1,56 @@
+[{
+  "_id": {
+    "$oid": "67ca8a57b2fd0dff480eb6ed"
+  },
+  "user": {
+    "$oid": "67c53736bed49298b305c6a4"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "67c90b5ca4041d9bfa357ec9"
+      },
+      "quantity": 2,
+      "price": 500.99,
+      "_id": {
+        "$oid": "67ca8a57b2fd0dff480eb6ee"
+      }
+    }
+  ],
+  "total": 1001.98,
+  "status": "Pagado",
+  "createdAt": {
+    "$date": "2025-03-07T05:55:35.962Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T05:55:35.962Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67ca8bd9b2fd0dff480eb718"
+  },
+  "user": {
+    "$oid": "67c6872bee380948fd2edf15"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "67c90b5ca4041d9bfa357ec9"
+      },
+      "quantity": 1,
+      "price": 500.99,
+      "_id": {
+        "$oid": "67ca8bd9b2fd0dff480eb719"
+      }
+    }
+  ],
+  "total": 500.99,
+  "status": "Pagado",
+  "createdAt": {
+    "$date": "2025-03-07T06:02:01.442Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T06:02:01.442Z"
+  }
+}]

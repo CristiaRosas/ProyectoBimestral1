@@ -11,6 +11,7 @@ import userRoutes from '../src/users/user.routes.js';
 import productoRoutes from '../src/products/producto.routes.js';
 import categoryRoutes from '../src/categorias/category.routes.js';
 import facturaRoutes from '../src/facturas/factura.routes.js';
+import carRoutes from '../src/carrito/car.routes.js';
 
 const middlewares = (app) => {
     app.use(express.urlencoded({extended : false}));
@@ -27,6 +28,7 @@ const routes = (app) => {
     app.use('/Ventas/v1/productos', productoRoutes);
     app.use('/Ventas/v1/categorias', categoryRoutes);
     app.use('/Ventas/v1/facturas', facturaRoutes);
+    app.use('/Ventas/v1/carrito', carRoutes);
 };
 
 export const conetarDB = async() => {

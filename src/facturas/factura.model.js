@@ -17,7 +17,7 @@ const FacturaSchema = Schema({
             quantity: {
                 type: Number,
                 required: true,
-                min: [1, "Quantity must La cantidad debe ser mayor a 1!"]
+                min: [1, "La cantidad debe ser mayor a 1!"]
             },
             price: {
                 type: Number,

@@ -665,6 +665,71 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Facturas Ventas",
+			"item": [
+				{
+					"name": "ObtenerFacturas",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzMTkwNjAsImV4cCI6MTc0MTMyMjY2MH0.AewSvmUffVlk4DAIDjgUUmazDvngtN6CLzF_IcXASOw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3003/Ventas/v1/facturas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"Ventas",
+								"v1",
+								"facturas",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditarFactura",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/Ventas/v1/facturas/updateFactura/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"Ventas",
+								"v1",
+								"facturas",
+								"updateFactura",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }

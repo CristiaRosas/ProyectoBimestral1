@@ -320,13 +320,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzMDcyNTIsImV4cCI6MTc0MTMxMDg1Mn0.4ow6mqegtmfDX5_KH66DSda_wwmwr_nX5XPwBc-7fvg",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzNjU2MDYsImV4cCI6MTc0MTM2OTIwNn0.uhzfYjQ4vlTp0JjC44H5aYpHk5XQMxBWSK1CayHi4gc",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Iphone 16 pro max\",\r\n  \"description\": \"telefonos inteligentes\",\r\n  \"price\": 999.50,\r\n  \"stock\": 1\r\n}",
+							"raw": "{\r\n  \"name\": \"Estaño para soldar\",  //nombre del producto\r\n  \"description\": \"Electrónicos\", //nombre de la categoria\r\n  \"price\": 20.50,\r\n  \"stock\": 1\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -357,7 +357,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzMjM2NDMsImV4cCI6MTc0MTMyNzI0M30.IAxiekrCJYxI2CF2HnF9eOVf_k7ImohSSG8yczuRzsk",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzNTg3NTUsImV4cCI6MTc0MTM2MjM1NX0.EanswB6Tm4KBvxf8zKw5FP9gCjBfrNRFlecJQU08R24",
 								"type": "text"
 							}
 						],
@@ -385,7 +385,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEyMjgyMDcsImV4cCI6MTc0MTIzMTgwN30.eVmZCCj4JQ3DWFM96akVpjI6VBFTc53XZN32fp7ZJ84",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzNTg3NTUsImV4cCI6MTc0MTM2MjM1NX0.EanswB6Tm4KBvxf8zKw5FP9gCjBfrNRFlecJQU08R24",
 								"type": "text"
 							}
 						],
@@ -414,7 +414,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEyMjkyNjIsImV4cCI6MTc0MTIzMjg2Mn0.5cqmT73jqHAgAz50UmdeZn4zMdC5NYZgB-xE4QsVd0k",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzNTg3NTUsImV4cCI6MTc0MTM2MjM1NX0.EanswB6Tm4KBvxf8zKw5FP9gCjBfrNRFlecJQU08R24",
 								"type": "text"
 							}
 						],
@@ -514,13 +514,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzMDcyNTIsImV4cCI6MTc0MTMxMDg1Mn0.4ow6mqegtmfDX5_KH66DSda_wwmwr_nX5XPwBc-7fvg",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzNjU2MDYsImV4cCI6MTc0MTM2OTIwNn0.uhzfYjQ4vlTp0JjC44H5aYpHk5XQMxBWSK1CayHi4gc",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Telefonia\",\r\n    \"description\": \"telefonos inteligentes\",\r\n    \"productos\": [\"Samsung S22 plus\", \"Iphone 16 pro max\"]\r\n}",
+							"raw": "{\r\n    \"name\": \"Electrónicos\",  //colocar el nombre de la categoria\r\n    \"description\": \"Productos electrónicos diversos\",  //agregar la descripcion del producto\r\n    \"productos\": [\"Coutin\", \"Estaño para soldar\"] // agregar los productos existentes a la categoria\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -546,15 +546,27 @@
 				},
 				{
 					"name": "ObtenerCategorias",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "GET",
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzMDcyNTIsImV4cCI6MTc0MTMxMDg1Mn0.4ow6mqegtmfDX5_KH66DSda_wwmwr_nX5XPwBc-7fvg",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzNjU2MDYsImV4cCI6MTc0MTM2OTIwNn0.uhzfYjQ4vlTp0JjC44H5aYpHk5XQMxBWSK1CayHi4gc",
 								"type": "text"
 							}
 						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "http://localhost:3003/Ventas/v1/categorias/",
 							"protocol": "http",
@@ -579,12 +591,12 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzMDcyNTIsImV4cCI6MTc0MTMxMDg1Mn0.4ow6mqegtmfDX5_KH66DSda_wwmwr_nX5XPwBc-7fvg",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzNjU2MDYsImV4cCI6MTc0MTM2OTIwNn0.uhzfYjQ4vlTp0JjC44H5aYpHk5XQMxBWSK1CayHi4gc",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3003/Ventas/v1/categorias/getCategoriasById/67ca405692cdfcbc185860c0",
+							"raw": "http://localhost:3003/Ventas/v1/categorias/getCategoriasById/67ca3f0692cdfcbc185860a3",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -595,7 +607,7 @@
 								"v1",
 								"categorias",
 								"getCategoriasById",
-								"67ca405692cdfcbc185860c0"
+								"67ca3f0692cdfcbc185860a3"
 							]
 						}
 					},
@@ -608,13 +620,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEyMzc5MzQsImV4cCI6MTc0MTI0MTUzNH0.XGB73BNeyavvK6UnQi117ip4CcFyCj_9K0_ki7WMvxs",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzNjU2MDYsImV4cCI6MTc0MTM2OTIwNn0.uhzfYjQ4vlTp0JjC44H5aYpHk5XQMxBWSK1CayHi4gc",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"SiEdita\",\r\n    \"description\": \"editado\",\r\n    \"productos\": \"editado\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Productos Gamers\",  //nuevo nombre de la categoria\r\n    \"description\": \"hardware y perifericos\",  //nueva descripcion\r\n    \"productos\": [\"Procesador i9 14100K\", \"Grafica RTX 4060\"]  //agregar los productos de esa categoria\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -622,7 +634,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3003/Ventas/v1/categorias/67c9393cf14d593b3814d4d9",
+							"raw": "http://localhost:3003/Ventas/v1/categorias/67ca3f0692cdfcbc185860a3",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -632,7 +644,7 @@
 								"Ventas",
 								"v1",
 								"categorias",
-								"67c9393cf14d593b3814d4d9"
+								"67ca3f0692cdfcbc185860a3"
 							]
 						}
 					},
@@ -645,7 +657,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzMDcyNTIsImV4cCI6MTc0MTMxMDg1Mn0.4ow6mqegtmfDX5_KH66DSda_wwmwr_nX5XPwBc-7fvg",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzNjU2MDYsImV4cCI6MTc0MTM2OTIwNn0.uhzfYjQ4vlTp0JjC44H5aYpHk5XQMxBWSK1CayHi4gc",
 								"type": "text"
 							}
 						],
@@ -707,7 +719,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzMjY5ODMsImV4cCI6MTc0MTMzMDU4M30.nAiXmioAATMHQ6jRrLHWobZPnASKS_ha8aWWq4ZvpWA",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzNjU2MDYsImV4cCI6MTc0MTM2OTIwNn0.uhzfYjQ4vlTp0JjC44H5aYpHk5XQMxBWSK1CayHi4gc",
 								"type": "text"
 							}
 						],
@@ -732,10 +744,16 @@
 					"name": "EditarFactura",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzNjU2MDYsImV4cCI6MTc0MTM2OTIwNn0.uhzfYjQ4vlTp0JjC44H5aYpHk5XQMxBWSK1CayHi4gc",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\r\n    \"productos\": [\r\n        {\r\n            \"producto\": \"67c90b5ca4041d9bfa357ec9\",\r\n            \"quantity\": 2\r\n        }\r\n    ],\r\n    \"status\": \"Pendiente\"\r\n\r\n    //no jala, y buguea el programa\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -743,7 +761,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3003/Ventas/v1/facturas/updateFactura/",
+							"raw": "http://localhost:3003/Ventas/v1/facturasupdateFactura/",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -752,8 +770,7 @@
 							"path": [
 								"Ventas",
 								"v1",
-								"facturas",
-								"updateFactura",
+								"facturasupdateFactura",
 								""
 							]
 						}

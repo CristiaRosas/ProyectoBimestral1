@@ -123,4 +123,40 @@
   "updatedAt": {
     "$date": "2025-03-07T00:38:51.245Z"
   }
+},
+{
+  "_id": {
+    "$oid": "67cb23995e21eefdd60b8887"
+  },
+  "name": "Coutin",
+  "description": "Electrónicos",
+  "price": 20.5,
+  "stock": 1,
+  "sold": 0,
+  "outOfStock": false,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-07T16:49:29.847Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T16:49:29.847Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67cb23a75e21eefdd60b888a"
+  },
+  "name": "Estaño para soldar",
+  "description": "Electrónicos",
+  "price": 20.5,
+  "stock": 1,
+  "sold": 0,
+  "outOfStock": false,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-07T16:49:43.274Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T16:49:43.274Z"
+  }
 }]

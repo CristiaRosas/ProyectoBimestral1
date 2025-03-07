@@ -1,21 +1,20 @@
-import { body } from 'express-validator';
-import { validarCampos } from './validar-campos.js';
-import { existeEmail, esRoleValido } from '../helpers/db.validator.js';
-
+import { body } from "express-validator";
+import { validarCampos } from "./validar-campos.js";
+import { existeEmail, esRoleValido } from "../helpers/db.validator.js";
 
 export const registerValidator = [
-    body('name', 'El nombre es requerido').not().isEmpty(),
-    body('surname', 'El apellido es obligatorio.').not().isEmpty(),
-    body('email', 'Debes ingresar un correo electrónico válido').isEmail(),
-    body('email').custom(existeEmail),
+    body("name", "The naem is required!").not().isEmpty(),
+    body("surname", "The surnaem is required!").not().isEmpty(),
+    body("email", "You must enter a valid email!").isEmail(),
+    body("email").custom(existeEmail),
     body('role').custom(esRoleValido),
-    body('password', 'la contraseña debe tener al menos o caracteres').isLength({ min: 6}),
-    validarCampos,
+    body("password", "Password must be at least 8 cahracters!").isLength({ min: 8 }),
+    validarCampos
 ];
 
 export const loginValidator = [
-    body('email').optional().isEmail().withMessage("Introduzca una dirección de correo electrónico válida"),
-    body('username').optional().isEmail().isString().withMessage("Ingrese un nombre de usuario válido"),
-    body('password', "La contraseña debe tener al menos 6 caracteres.").isLength({min: 8}),
-    validarCampos,
-]
+    body("email").optional().isEmail().withMessage("Enter a valid email address!"),
+    body("username").optional().isString().withMessage("Enter a valid username!"),
+    body("password", "Password must be at least 8 characters!").isLength({ min: 8 }),
+    validarCampos
+];

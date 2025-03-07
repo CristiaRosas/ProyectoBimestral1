@@ -2,14 +2,14 @@
   "_id": {
     "$oid": "67ca3f0692cdfcbc185860a3"
   },
-  "name": "Electrónicos",
-  "description": "Productos electrónicos diversos",
+  "name": "Productos Gamers",
+  "description": "hardware y perifericos",
   "productos": [
     {
-      "$oid": "67ca3ef092cdfcbc1858609c"
+      "$oid": "67c90b5ca4041d9bfa357ec9"
     },
     {
-      "$oid": "67ca3f0392cdfcbc1858609f"
+      "$oid": "67ca3f6292cdfcbc185860ab"
     }
   ],
   "status": true,
@@ -17,7 +17,7 @@
     "$date": "2025-03-07T00:34:14.819Z"
   },
   "updatedAt": {
-    "$date": "2025-03-07T00:34:14.819Z"
+    "$date": "2025-03-07T16:56:09.808Z"
   }
 },
 {
@@ -62,5 +62,27 @@
   },
   "updatedAt": {
     "$date": "2025-03-07T00:39:50.512Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67cb23aa5e21eefdd60b888e"
+  },
+  "name": "Electrónicos",
+  "description": "Productos electrónicos diversos",
+  "productos": [
+    {
+      "$oid": "67cb23995e21eefdd60b8887"
+    },
+    {
+      "$oid": "67cb23a75e21eefdd60b888a"
+    }
+  ],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T16:49:46.911Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T16:49:46.911Z"
   }
 }]

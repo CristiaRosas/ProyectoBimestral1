@@ -289,13 +289,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEyMjkyNjIsImV4cCI6MTc0MTIzMjg2Mn0.5cqmT73jqHAgAz50UmdeZn4zMdC5NYZgB-xE4QsVd0k",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzMDcyNTIsImV4cCI6MTc0MTMxMDg1Mn0.4ow6mqegtmfDX5_KH66DSda_wwmwr_nX5XPwBc-7fvg",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Prueba de eliminar\",\r\n  \"description\": \"cerealres\",\r\n  \"price\": 10.99,\r\n  \"stock\": 3\r\n}",
+							"raw": "{\r\n  \"name\": \"Iphone 16 pro max\",\r\n  \"description\": \"telefonos inteligentes\",\r\n  \"price\": 999.50,\r\n  \"stock\": 1\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -326,7 +326,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEyMzc5MzQsImV4cCI6MTc0MTI0MTUzNH0.XGB73BNeyavvK6UnQi117ip4CcFyCj_9K0_ki7WMvxs",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzMDcyNTIsImV4cCI6MTc0MTMxMDg1Mn0.4ow6mqegtmfDX5_KH66DSda_wwmwr_nX5XPwBc-7fvg",
 								"type": "text"
 							}
 						],
@@ -483,13 +483,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEyMzc5MzQsImV4cCI6MTc0MTI0MTUzNH0.XGB73BNeyavvK6UnQi117ip4CcFyCj_9K0_ki7WMvxs",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzMDcyNTIsImV4cCI6MTc0MTMxMDg1Mn0.4ow6mqegtmfDX5_KH66DSda_wwmwr_nX5XPwBc-7fvg",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"ProbarEditar\",\r\n    \"description\": \"XDDDD\",\r\n    \"productos\": \"XDDDDD\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Telefonia\",\r\n    \"description\": \"telefonos inteligentes\",\r\n    \"productos\": [\"Samsung S22 plus\", \"Iphone 16 pro max\"]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -520,7 +520,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEyMzc5MzQsImV4cCI6MTc0MTI0MTUzNH0.XGB73BNeyavvK6UnQi117ip4CcFyCj_9K0_ki7WMvxs",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzMDcyNTIsImV4cCI6MTc0MTMxMDg1Mn0.4ow6mqegtmfDX5_KH66DSda_wwmwr_nX5XPwBc-7fvg",
 								"type": "text"
 							}
 						],
@@ -548,12 +548,12 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEyMzc5MzQsImV4cCI6MTc0MTI0MTUzNH0.XGB73BNeyavvK6UnQi117ip4CcFyCj_9K0_ki7WMvxs",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzMDcyNTIsImV4cCI6MTc0MTMxMDg1Mn0.4ow6mqegtmfDX5_KH66DSda_wwmwr_nX5XPwBc-7fvg",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3003/Ventas/v1/categorias/getCategoriasById/67c93822f14d593b3814d4c9",
+							"raw": "http://localhost:3003/Ventas/v1/categorias/getCategoriasById/67ca405692cdfcbc185860c0",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -564,7 +564,7 @@
 								"v1",
 								"categorias",
 								"getCategoriasById",
-								"67c93822f14d593b3814d4c9"
+								"67ca405692cdfcbc185860c0"
 							]
 						}
 					},
@@ -614,12 +614,12 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEyMzc5MzQsImV4cCI6MTc0MTI0MTUzNH0.XGB73BNeyavvK6UnQi117ip4CcFyCj_9K0_ki7WMvxs",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzMDcyNTIsImV4cCI6MTc0MTMxMDg1Mn0.4ow6mqegtmfDX5_KH66DSda_wwmwr_nX5XPwBc-7fvg",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3003/Ventas/v1/categorias/getProductsByCategory/Gamer",
+							"raw": "http://localhost:3003/Ventas/v1/categorias/getProductsByCategory/Electrónicos",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -630,7 +630,7 @@
 								"v1",
 								"categorias",
 								"getProductsByCategory",
-								"Gamer"
+								"Electrónicos"
 							]
 						}
 					},

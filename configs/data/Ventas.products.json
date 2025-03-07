@@ -21,7 +21,7 @@
     "$oid": "67c90b5ca4041d9bfa357ec9"
   },
   "name": "Grafica RTX 4060",
-  "description": "Pieza de computadora",
+  "description": "Piezas de computadoras de alta gama",
   "price": 500.99,
   "stock": 3,
   "sold": 0,
@@ -50,5 +50,77 @@
   },
   "updatedAt": {
     "$date": "2025-03-06T02:54:15.558Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67ca3ef092cdfcbc1858609c"
+  },
+  "name": "Laptop",
+  "description": "Productos electrónicos diversos",
+  "price": 450.5,
+  "stock": 3,
+  "sold": 0,
+  "outOfStock": false,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-07T00:33:52.265Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T00:33:52.265Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67ca3f0392cdfcbc1858609f"
+  },
+  "name": "Smartphone",
+  "description": "Productos electrónicos diversos",
+  "price": 3700.5,
+  "stock": 2,
+  "sold": 0,
+  "outOfStock": false,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-07T00:34:11.557Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T00:34:11.557Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67ca3f6292cdfcbc185860ab"
+  },
+  "name": "Procesador i9 14100K",
+  "description": "Piezas de computadoras de alta gama",
+  "price": 333.5,
+  "stock": 2,
+  "sold": 0,
+  "outOfStock": false,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-07T00:35:46.986Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T00:35:46.986Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67ca401b92cdfcbc185860ba"
+  },
+  "name": "Iphone 16 pro max",
+  "description": "telefonos inteligentes",
+  "price": 999.5,
+  "stock": 1,
+  "sold": 0,
+  "outOfStock": false,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-07T00:38:51.245Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T00:38:51.245Z"
   }
 }]

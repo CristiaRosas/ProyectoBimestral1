@@ -1,45 +1,66 @@
 [{
   "_id": {
-    "$oid": "67c9300a0097868624cd658b"
+    "$oid": "67ca3f0692cdfcbc185860a3"
+  },
+  "name": "Electrónicos",
+  "description": "Productos electrónicos diversos",
+  "productos": [
+    {
+      "$oid": "67ca3ef092cdfcbc1858609c"
+    },
+    {
+      "$oid": "67ca3f0392cdfcbc1858609f"
+    }
+  ],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T00:34:14.819Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T00:34:14.819Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67ca3fcf92cdfcbc185860af"
   },
   "name": "Gamer",
   "description": "Piezas de computadoras de alta gama",
-  "productos": [],
+  "productos": [
+    {
+      "$oid": "67c90b5ca4041d9bfa357ec9"
+    },
+    {
+      "$oid": "67ca3f6292cdfcbc185860ab"
+    }
+  ],
   "status": true,
   "createdAt": {
-    "$date": "2025-03-06T05:18:02.019Z"
+    "$date": "2025-03-07T00:37:35.952Z"
   },
   "updatedAt": {
-    "$date": "2025-03-06T05:18:02.019Z"
+    "$date": "2025-03-07T00:37:35.952Z"
   }
 },
 {
   "_id": {
-    "$oid": "67c93822f14d593b3814d4c9"
+    "$oid": "67ca405692cdfcbc185860c0"
   },
   "name": "Telefonia",
   "description": "telefonos inteligentes",
-  "productos": [],
+  "productos": [
+    {
+      "$oid": "67c9086ae2eef7e48210beff"
+    },
+    {
+      "$oid": "67ca401b92cdfcbc185860ba"
+    }
+  ],
   "status": true,
   "createdAt": {
-    "$date": "2025-03-06T05:52:34.318Z"
+    "$date": "2025-03-07T00:39:50.512Z"
   },
   "updatedAt": {
-    "$date": "2025-03-06T05:52:34.318Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "67c939f2f14d593b3814d4e6"
-  },
-  "name": "Sin categoria",
-  "description": "productos sin categoría",
-  "productos": [],
-  "status": true,
-  "createdAt": {
-    "$date": "2025-03-06T06:00:18.400Z"
-  },
-  "updatedAt": {
-    "$date": "2025-03-06T06:00:18.403Z"
+    "$date": "2025-03-07T00:39:50.512Z"
   }
 }]

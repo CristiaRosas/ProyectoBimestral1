@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { check } from "express-validator";
-import { addProductToCar, getCar, removeProductFromCar, pagarCar, historial, getMostPurchasedProducts  } from "./car.controller.js";
+import { addProductToCar, getCar, removeProductFromCar, pagarCar, historial } from "./car.controller.js";
 import { validarCampos } from "../middlewares/validar-campos.js";
 import { validarJWT } from "../middlewares/validar-jwt.js";
 import { tieneRole } from "../middlewares/validar-roles.js";
@@ -55,13 +55,6 @@ router.post(
     ],
     pagarCar
 );
-
-router.get(
-    "/frecuenciaCompra",
-    getMostPurchasedProducts
-);
-
-
 
 router.get(
     "/historial/:id",

@@ -170,51 +170,6 @@ export const pagarCar = async (req, res) => {
     }
 };
 
-export const getMostPurchasedProducts = async (req, res) => {
-    try {
-        const facturas = await Factura.find().populate("products.product");
-
-        if (!facturas.length) {
-            return res.status(404).json({ 
-                success: false, 
-                message: "No se encontraron compras en el historial." 
-            });
-        }
-
-        const productCount = {};
-
-        facturas.forEach(factura => {
-            factura.products.forEach(item => {
-                const productId = item.product._id.toString();
-                if (productCount[productId]) {
-                    productCount[productId].count += item.quantity;
-                } else {
-                    productCount[productId] = {
-                        product: item.product,
-                        count: item.quantity
-                    };
-                }
-            });
-        });
-
-        const sortedProducts = Object.values(productCount).sort((a, b) => b.count - a.count);
-
-        res.status(200).json({ 
-            success: true, 
-            message: "Productos más comprados a nivel global.",
-            products: sortedProducts
-        });
-    } catch (error) {
-        console.error("Error al obtener los productos más comprados:", error);
-        res.status(500).json({ 
-            success: false, 
-            message: "Error al obtener los productos más comprados.", 
-            error: error.message 
-        });
-    }
-};
-
-
 export const historial = async (req, res) => {
     try {
         const userId = req.usuario.id;

@@ -8,12 +8,12 @@ export const getFacturas = async (req, res) => {
         const query = { status: { $ne: "Cancelado" } };
 
         const [facturas, total] = await Promise.all([
-            Factura.find(query) // Usar el modelo importado
+            Factura.find(query) 
                 .skip(Number(desde))
                 .limit(Number(limite))
                 .populate("user", "name")
                 .populate("products.product", "name price"),
-            Factura.countDocuments(query) // Usar el modelo importado
+            Factura.countDocuments(query) 
         ]);
 
         const formattedFacturas = facturas.map(factura => ({
@@ -30,7 +30,10 @@ export const getFacturas = async (req, res) => {
             updatedAt: factura.updatedAt
         }));
 
-        res.status(200).json({ success: true, total, facturas: formattedFacturas });
+        res.status(200).json({ 
+            success: true, 
+            total, 
+            facturas: formattedFacturas });
     } catch (error) {
         res.status(500).json({
             success: false,
@@ -40,7 +43,7 @@ export const getFacturas = async (req, res) => {
     }
 };
 
-export const updateFactura = async (req, res) => {
+/* xport const updateFactura = async (req, res) => {
     try {
         const { id } = req.params;
         const { productos, status } = req.body;
@@ -103,4 +106,4 @@ export const updateFactura = async (req, res) => {
             error: error.message
         });
     }
-};
+}; */

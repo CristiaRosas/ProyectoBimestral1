@@ -21,44 +21,78 @@ export const getProductos = async (req = request, res = response) => {
 
       res.status(200).json({
           success: true,
-          total: await Producto.countDocuments({ estado: true }),
+          total: 
           productos,
       });
   } catch (error) {
-      res.status(500).json({ success: false, msg: "Error al obtener productos", error });
+      res.status(500).json({ 
+        success: false, 
+        msg: "Error al obtener productos", 
+        error 
+    });
   }
 };
 
 export const getProductoById = async (req, res) => {
   try {
       const producto = await Producto.findById(req.params.id);
-      if (!producto) return res.status(404).json({ success: false, msg: "Producto no encontrado" });
+      if (!producto) 
+        return res.status(404).json({ 
+        success: false, 
+        msg: "Producto no encontrado" });
       
-      res.status(200).json({ success: true, producto });
+      res.status(200).json({ 
+        success: true, 
+        producto 
+    });
   } catch (error) {
-      res.status(500).json({ success: false, msg: "Error al obtener producto", error });
+      res.status(500).json({ 
+        success: false, 
+        msg: "Error al obtener producto", 
+        error 
+    });
   }
 };
 
 export const getProductoByName = async (req, res) => {
   try {
       const producto = await Producto.findOne({ name: req.params.name });
-      if (!producto) return res.status(404).json({ success: false, msg: "Producto no encontrado" });
+      if (!producto) return res.status(404).json({ 
+        success: false, 
+        msg: "Producto no encontrado" 
+    });
       
-      res.status(200).json({ success: true, msg: "Producto encontrado con éxito!", producto });
+      res.status(200).json({ 
+        success: true, 
+        producto 
+    });
   } catch (error) {
-      res.status(500).json({ success: false, msg: "Error al obtener producto", error });
+      res.status(500).json({ 
+        success: false, 
+        msg: "Error al obtener producto", 
+        error 
+    });
   }
 };
 
 export const updateProducto = async (req, res = response) => {
   try {
       const producto = await Producto.findByIdAndUpdate(req.params.id, req.body, { new: true });
-      if (!producto) return res.status(404).json({ success: false, msg: "Producto no encontrado" });
+      if (!producto) 
+        return res.status(404).json({ 
+        success: false, 
+        msg: "Producto no encontrado" 
+});
       
-      res.status(200).json({ success: true, msg: "Producto actualizado con éxito!", producto });
+      res.status(200).json({ 
+        success: true, 
+        producto });
   } catch (error) {
-      res.status(500).json({ success: false, msg: "Error al actualizar producto", error });
+      res.status(500).json({ 
+        success: false, 
+        msg: "Error al actualizar producto", 
+        error 
+    });
   }
 };
 
@@ -69,22 +103,45 @@ export const deleteProduct = async (req, res) => {
 
       if (route.includes("/sell")) {
           const product = await Producto.findById(id);
-          if (!product || !product.estado) return res.status(404).json({ success: false, message: "Producto no encontrado" });
-          if (product.stock <= 0) return res.status(400).json({ success: false, message: "Producto agotado" });
+          if (!product || !product.estado) 
+            return res.status(404).json({ 
+            success: false, 
+            message: "Producto no encontrado" 
+    });
+          if (product.stock <= 0) 
+            return res.status(400).json({ 
+            success: false,
+            message: "Producto agotado" 
+        });
           
           product.stock -= 1;
           product.sold += 1;
           product.outOfStock = product.stock === 0;
           await product.save();
           
-          return res.status(200).json({ success: true, message: "Producto vendido con éxito!", product });
+          return res.status(200).json({ 
+            success: true, 
+            message: "Producto vendido con éxito!", 
+            product });
       }
 
       const deletedProduct = await Producto.findByIdAndUpdate(id, { estado: false }, { new: true });
-      if (!deletedProduct) return res.status(404).json({ success: false, message: "Producto no encontrado" });
+      if (!deletedProduct) 
+        return res.status(404).json({ 
+        success: false, 
+        message: "Producto no encontrado"
+     });
       
-      return res.status(200).json({ success: true, message: "Producto eliminado con éxito", product: deletedProduct });
+      return res.status(200).json({ 
+        success: true, 
+        message: "Producto eliminado con éxito", 
+        product: deletedProduct 
+    });
   } catch (error) {
-      res.status(500).json({ success: false, message: "Error al eliminar producto", error });
-  }
+      res.status(500).json({ 
+        success: false,
+         message: "Error al eliminar producto", 
+         error 
+        });
+    }
 };

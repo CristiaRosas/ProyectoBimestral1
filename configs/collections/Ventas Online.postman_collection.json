@@ -47,7 +47,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"kev@gmail.com\",\r\n  \"password\": \"12345678\"\r\n}",
+							"raw": "{\r\n    \"email\": \"jonas@gmail.com\",\r\n  \"password\": \"87654321\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -136,12 +136,12 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDA5ODE1MTEsImV4cCI6MTc0MDk4NTExMX0.rSYZkLhJ8DqwGOeNv-5cwi7PA3cjgY1bPoSYaeFLFwo",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzOTMxMTMsImV4cCI6MTc0MTM5NjcxM30.EOVnM-slf7YsheboLKFUGL2iPAm5wGjbeNsuBiS-PZQ",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3003/Ventas/v1/users/getUserById/67c53736bed49298b305c6a4",
+							"raw": "http://localhost:3003/Ventas/v1/users/getUserById/67c536e3ef8434000c988de4",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -152,7 +152,7 @@
 								"v1",
 								"users",
 								"getUserById",
-								"67c53736bed49298b305c6a4"
+								"67c536e3ef8434000c988de4"
 							]
 						}
 					},
@@ -165,7 +165,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDA5ODIyNzUsImV4cCI6MTc0MDk4NTg3NX0.cG3f0tuBMbeK2mqRwWDNr5LqMQ1c0_pzuIHV3uIzFqk",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzczNmJlZDQ5Mjk4YjMwNWM2YTQiLCJpYXQiOjE3NDEzOTM5NjQsImV4cCI6MTc0MTM5NzU2NH0.VJk8fbp9-0-9Rf3NtHDOcYkhrGKvvrVbbe3MbZGS_Sk",
 								"type": "text"
 							}
 						],
@@ -203,7 +203,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDA5ODIyNzUsImV4cCI6MTc0MDk4NTg3NX0.cG3f0tuBMbeK2mqRwWDNr5LqMQ1c0_pzuIHV3uIzFqk",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzOTMxMTMsImV4cCI6MTc0MTM5NjcxM30.EOVnM-slf7YsheboLKFUGL2iPAm5wGjbeNsuBiS-PZQ",
 								"type": "text"
 							}
 						],
@@ -217,7 +217,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3003/Ventas/v1/users/updatePassword/67c5380b4e7ae2a02504c0f7",
+							"raw": "http://localhost:3003/Ventas/v1/users/updatePassword/67c53736bed49298b305c6a4",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -228,7 +228,7 @@
 								"v1",
 								"users",
 								"updatePassword",
-								"67c5380b4e7ae2a02504c0f7"
+								"67c53736bed49298b305c6a4"
 							]
 						}
 					},
@@ -299,14 +299,6 @@
 						}
 					},
 					"response": []
-				},
-				{
-					"name": "Reporte Excel",
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
 				}
 			]
 		},
@@ -357,7 +349,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzNTg3NTUsImV4cCI6MTc0MTM2MjM1NX0.EanswB6Tm4KBvxf8zKw5FP9gCjBfrNRFlecJQU08R24",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzOTMxMTMsImV4cCI6MTc0MTM5NjcxM30.EOVnM-slf7YsheboLKFUGL2iPAm5wGjbeNsuBiS-PZQ",
 								"type": "text"
 							}
 						],
@@ -385,7 +377,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzNTg3NTUsImV4cCI6MTc0MTM2MjM1NX0.EanswB6Tm4KBvxf8zKw5FP9gCjBfrNRFlecJQU08R24",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzOTMxMTMsImV4cCI6MTc0MTM5NjcxM30.EOVnM-slf7YsheboLKFUGL2iPAm5wGjbeNsuBiS-PZQ",
 								"type": "text"
 							}
 						],
@@ -414,7 +406,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzNTg3NTUsImV4cCI6MTc0MTM2MjM1NX0.EanswB6Tm4KBvxf8zKw5FP9gCjBfrNRFlecJQU08R24",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzOTMxMTMsImV4cCI6MTc0MTM5NjcxM30.EOVnM-slf7YsheboLKFUGL2iPAm5wGjbeNsuBiS-PZQ",
 								"type": "text"
 							}
 						],
@@ -443,7 +435,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEyMjkyNjIsImV4cCI6MTc0MTIzMjg2Mn0.5cqmT73jqHAgAz50UmdeZn4zMdC5NYZgB-xE4QsVd0k",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzOTMxMTMsImV4cCI6MTc0MTM5NjcxM30.EOVnM-slf7YsheboLKFUGL2iPAm5wGjbeNsuBiS-PZQ",
 								"type": "text"
 							}
 						],
@@ -480,7 +472,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEyMjkyNjIsImV4cCI6MTc0MTIzMjg2Mn0.5cqmT73jqHAgAz50UmdeZn4zMdC5NYZgB-xE4QsVd0k",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzOTMxMTMsImV4cCI6MTc0MTM5NjcxM30.EOVnM-slf7YsheboLKFUGL2iPAm5wGjbeNsuBiS-PZQ",
 								"type": "text"
 							}
 						],
@@ -554,7 +546,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzNjU2MDYsImV4cCI6MTc0MTM2OTIwNn0.uhzfYjQ4vlTp0JjC44H5aYpHk5XQMxBWSK1CayHi4gc",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzOTQ4ODIsImV4cCI6MTc0MTM5ODQ4Mn0.nCWfud5FKuH5dr2uPEusKQI1spdO0EbJuMQ-nZ4cbxw",
 								"type": "text"
 							}
 						],
@@ -591,7 +583,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzNjU2MDYsImV4cCI6MTc0MTM2OTIwNn0.uhzfYjQ4vlTp0JjC44H5aYpHk5XQMxBWSK1CayHi4gc",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzOTQ4ODIsImV4cCI6MTc0MTM5ODQ4Mn0.nCWfud5FKuH5dr2uPEusKQI1spdO0EbJuMQ-nZ4cbxw",
 								"type": "text"
 							}
 						],
@@ -620,13 +612,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzNjU2MDYsImV4cCI6MTc0MTM2OTIwNn0.uhzfYjQ4vlTp0JjC44H5aYpHk5XQMxBWSK1CayHi4gc",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzOTQ4ODIsImV4cCI6MTc0MTM5ODQ4Mn0.nCWfud5FKuH5dr2uPEusKQI1spdO0EbJuMQ-nZ4cbxw",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Productos Gamers\",  //nuevo nombre de la categoria\r\n    \"description\": \"hardware y perifericos\",  //nueva descripcion\r\n    \"productos\": [\"Procesador i9 14100K\", \"Grafica RTX 4060\"]  //agregar los productos de esa categoria\r\n}",
+							"raw": "{\r\n    \"name\": \"Productos para Gamers\",  //nuevo nombre de la categoria\r\n    \"description\": \"hardware y perifericos\",  //nueva descripcion\r\n    \"productos\": [\"Procesador i9 14100K\", \"Grafica RTX 4060\"]  //agregar los productos de esa categoria\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -657,12 +649,12 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzNjU2MDYsImV4cCI6MTc0MTM2OTIwNn0.uhzfYjQ4vlTp0JjC44H5aYpHk5XQMxBWSK1CayHi4gc",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzOTQ4ODIsImV4cCI6MTc0MTM5ODQ4Mn0.nCWfud5FKuH5dr2uPEusKQI1spdO0EbJuMQ-nZ4cbxw",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3003/Ventas/v1/categorias/getProductsByCategory/Electrónicos",
+							"raw": "http://localhost:3003/Ventas/v1/categorias/getProductsByCategory/Telefonia",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -673,7 +665,7 @@
 								"v1",
 								"categorias",
 								"getProductsByCategory",
-								"Electrónicos"
+								"Telefonia"
 							]
 						}
 					},
@@ -686,12 +678,12 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEyMzc5MzQsImV4cCI6MTc0MTI0MTUzNH0.XGB73BNeyavvK6UnQi117ip4CcFyCj_9K0_ki7WMvxs",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzOTQ4ODIsImV4cCI6MTc0MTM5ODQ4Mn0.nCWfud5FKuH5dr2uPEusKQI1spdO0EbJuMQ-nZ4cbxw",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3003/Ventas/v1/categorias/67c9393cf14d593b3814d4d9",
+							"raw": "http://localhost:3003/Ventas/v1/categorias/67ca3f0692cdfcbc185860a3",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -701,7 +693,7 @@
 								"Ventas",
 								"v1",
 								"categorias",
-								"67c9393cf14d593b3814d4d9"
+								"67ca3f0692cdfcbc185860a3"
 							]
 						}
 					},
@@ -719,7 +711,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzNjU2MDYsImV4cCI6MTc0MTM2OTIwNn0.uhzfYjQ4vlTp0JjC44H5aYpHk5XQMxBWSK1CayHi4gc",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzOTQ4ODIsImV4cCI6MTc0MTM5ODQ4Mn0.nCWfud5FKuH5dr2uPEusKQI1spdO0EbJuMQ-nZ4cbxw",
 								"type": "text"
 							}
 						],
@@ -789,13 +781,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2ODcyYmVlMzgwOTQ4ZmQyZWRmMTUiLCJpYXQiOjE3NDEzMjcyMDksImV4cCI6MTc0MTMzMDgwOX0.YWllBDZaSUwguCIPh-F16NcvYx5ydoOVoBKbm9wsF4k",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzczNmJlZDQ5Mjk4YjMwNWM2YTQiLCJpYXQiOjE3NDEzOTU5MzAsImV4cCI6MTc0MTM5OTUzMH0.2R1w-nPOujXGqo2bNB3szwDna951UFfKma0W5oog8e0",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"productoId\": \"67c90b5ca4041d9bfa357ec9\",\r\n    \"quantity\": 1\r\n}",
+							"raw": "{\r\n    \"productoId\": \"67ca3ef092cdfcbc1858609c\",\r\n    \"quantity\": 1\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -826,7 +818,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2ODcyYmVlMzgwOTQ4ZmQyZWRmMTUiLCJpYXQiOjE3NDEzMjcyMDksImV4cCI6MTc0MTMzMDgwOX0.YWllBDZaSUwguCIPh-F16NcvYx5ydoOVoBKbm9wsF4k",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzczNmJlZDQ5Mjk4YjMwNWM2YTQiLCJpYXQiOjE3NDEzOTU5MzAsImV4cCI6MTc0MTM5OTUzMH0.2R1w-nPOujXGqo2bNB3szwDna951UFfKma0W5oog8e0",
 								"type": "text"
 							}
 						],
@@ -854,12 +846,12 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzczNmJlZDQ5Mjk4YjMwNWM2YTQiLCJpYXQiOjE3NDEzMjQ5MDQsImV4cCI6MTc0MTMyODUwNH0.TyFz4W1Cb3QFvYbxl49aXfcpqTPOi6i4kDhFXi7Jfvw",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzczNmJlZDQ5Mjk4YjMwNWM2YTQiLCJpYXQiOjE3NDEzOTU5MzAsImV4cCI6MTc0MTM5OTUzMH0.2R1w-nPOujXGqo2bNB3szwDna951UFfKma0W5oog8e0",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3003/Ventas/v1/carrito/67ca401b92cdfcbc185860ba",
+							"raw": "http://localhost:3003/Ventas/v1/carrito/67ca3ef092cdfcbc1858609c",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -869,7 +861,7 @@
 								"Ventas",
 								"v1",
 								"carrito",
-								"67ca401b92cdfcbc185860ba"
+								"67ca3ef092cdfcbc1858609c"
 							]
 						}
 					},
@@ -882,7 +874,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2ODcyYmVlMzgwOTQ4ZmQyZWRmMTUiLCJpYXQiOjE3NDEzMjcyMDksImV4cCI6MTc0MTMzMDgwOX0.YWllBDZaSUwguCIPh-F16NcvYx5ydoOVoBKbm9wsF4k",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzczNmJlZDQ5Mjk4YjMwNWM2YTQiLCJpYXQiOjE3NDEzOTU5MzAsImV4cCI6MTc0MTM5OTUzMH0.2R1w-nPOujXGqo2bNB3szwDna951UFfKma0W5oog8e0",
 								"type": "text"
 							}
 						],
@@ -910,12 +902,12 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2ODcyYmVlMzgwOTQ4ZmQyZWRmMTUiLCJpYXQiOjE3NDEzMjcyMDksImV4cCI6MTc0MTMzMDgwOX0.YWllBDZaSUwguCIPh-F16NcvYx5ydoOVoBKbm9wsF4k",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzczNmJlZDQ5Mjk4YjMwNWM2YTQiLCJpYXQiOjE3NDEzOTU5MzAsImV4cCI6MTc0MTM5OTUzMH0.2R1w-nPOujXGqo2bNB3szwDna951UFfKma0W5oog8e0",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3003/Ventas/v1/carrito/historial/67ca8a57b2fd0dff480eb6ed",
+							"raw": "http://localhost:3003/Ventas/v1/carrito/historial/67cb9a055e02f8f2402c1c32",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -926,7 +918,7 @@
 								"v1",
 								"carrito",
 								"historial",
-								"67ca8a57b2fd0dff480eb6ed"
+								"67cb9a055e02f8f2402c1c32"
 							]
 						}
 					},

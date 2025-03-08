@@ -53,4 +53,32 @@
   "updatedAt": {
     "$date": "2025-03-07T06:02:01.442Z"
   }
+},
+{
+  "_id": {
+    "$oid": "67cb9a055e02f8f2402c1c32"
+  },
+  "user": {
+    "$oid": "67c53736bed49298b305c6a4"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "67ca3ef092cdfcbc1858609c"
+      },
+      "quantity": 1,
+      "price": 450.5,
+      "_id": {
+        "$oid": "67cb9a055e02f8f2402c1c33"
+      }
+    }
+  ],
+  "total": 450.5,
+  "status": "Pagado",
+  "createdAt": {
+    "$date": "2025-03-08T01:14:45.216Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-08T01:14:45.216Z"
+  }
 }]

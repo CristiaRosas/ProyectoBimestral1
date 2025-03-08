@@ -5,6 +5,14 @@ import Category from "../categorias/category.model.js";
 export const saveCategorias = async (req, res) => {
     try {
         const { name, description, productos = [] } = req.body;
+        const categoriaExistente = await Category.findOne({ name: name.trim() });
+
+        if (categoriaExistente) {
+            return res.status(400).json({
+                success: false,
+                message: "Ya existe una categoría con ese nombre",
+            });
+        }
 
         const productosEncontrados = await Product.find({ name: { $in: productos } });
 
@@ -12,20 +20,25 @@ export const saveCategorias = async (req, res) => {
             return res.status(400).json({
                 success: false,
                 message: "Uno o más productos no existen en la base de datos",
-                error: error.message
             });
         }
 
         const productoIds = productosEncontrados.map(producto => producto._id);
+
         const categoria = new Category({ name, description, productos: productoIds });
         const categoriaGuardada = await categoria.save();
+
+        await Product.updateMany(
+            { _id: { $in: productoIds } }, 
+            { $set: { relacion: categoriaGuardada._id } } 
+        );
+
         const categoriaPoblada = await Category.findById(categoriaGuardada._id).populate("productos", "name");
 
         res.status(200).json({ 
             success: true, 
-            message: "Categoría guardada con éxito", 
+            message: "Categoría guardada con éxito y productos actualizados",
             categoria: categoriaPoblada,
-            error: error.message
         });
     } catch (error) {
         console.error("Error al guardar la categoría:", error);
@@ -185,18 +198,29 @@ export const deleteCategory = async (req, res) => {
         categoria.status = false;
         await categoria.save();
 
-        let defaultCategory = await Category.findOne({ name: "Sin categoria" });
+        let defaultCategory = await Category.findOne({ name: "Sin categoría" });
 
         if (!defaultCategory) {
-            defaultCategory = new Category({ name: "Sin categoria", description: "Productos sin categoría", productos: [], status: true });
+            defaultCategory = new Category({
+                name: "Sin categoría",
+                description: "Productos sin categoría",
+                productos: [],
+                status: true,
+            });
             await defaultCategory.save();
         }
 
-        await Product.updateMany({ _id: { $in: categoria.productos } }, { category: defaultCategory._id });
+        await Product.updateMany(
+            { _id: { $in: categoria.productos } }, 
+            { $set: { relacion: defaultCategory._id } } 
+        );
+
+        defaultCategory.productos.push(...categoria.productos);
+        await defaultCategory.save();
 
         res.status(200).json({
             success: true,
-            message: "Categoría eliminada con éxito"
+            message: "Categoría eliminada con éxito y productos reasignados a la categoría por defecto"
         });
     } catch (error) {
         console.error("Error al eliminar la categoría:", error);
@@ -207,3 +231,27 @@ export const deleteCategory = async (req, res) => {
         });
     }
 };
+
+const createDefaultCategory = async () => {
+    try {
+        let defaultCategory = await Category.findOne({ name: "Sin categoría" });
+
+        if (!defaultCategory) {
+            defaultCategory = new Category({
+                name: "Sin categoría",
+                description: "Productos sin categoría",
+                productos: [],
+                status: true,
+            });
+
+            await defaultCategory.save();
+            console.log("Categoría 'Sin categoría' creada con éxito.");
+        } else {
+            console.log("La categoría 'Sin categoría' ya existe.");
+        }
+    } catch (error) {
+        console.error("Error al crear la categoría por defecto:", error);
+    }
+};
+
+createDefaultCategory();

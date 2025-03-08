@@ -1,49 +1,5 @@
 [{
   "_id": {
-    "$oid": "67ca3f0692cdfcbc185860a3"
-  },
-  "name": "Productos Gamers",
-  "description": "hardware y perifericos",
-  "productos": [
-    {
-      "$oid": "67c90b5ca4041d9bfa357ec9"
-    },
-    {
-      "$oid": "67ca3f6292cdfcbc185860ab"
-    }
-  ],
-  "status": true,
-  "createdAt": {
-    "$date": "2025-03-07T00:34:14.819Z"
-  },
-  "updatedAt": {
-    "$date": "2025-03-07T16:56:09.808Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "67ca3fcf92cdfcbc185860af"
-  },
-  "name": "Gamer",
-  "description": "Piezas de computadoras de alta gama",
-  "productos": [
-    {
-      "$oid": "67c90b5ca4041d9bfa357ec9"
-    },
-    {
-      "$oid": "67ca3f6292cdfcbc185860ab"
-    }
-  ],
-  "status": true,
-  "createdAt": {
-    "$date": "2025-03-07T00:37:35.952Z"
-  },
-  "updatedAt": {
-    "$date": "2025-03-07T00:37:35.952Z"
-  }
-},
-{
-  "_id": {
     "$oid": "67ca405692cdfcbc185860c0"
   },
   "name": "Telefonia",
@@ -84,5 +40,130 @@
   },
   "updatedAt": {
     "$date": "2025-03-07T16:49:46.911Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67ca3f0692cdfcbc185860a3"
+  },
+  "name": "Perifericos gamers",
+  "description": "hardware y perifericos",
+  "productos": [
+    {
+      "$oid": "67c90b5ca4041d9bfa357ec9"
+    },
+    {
+      "$oid": "67ca3f6292cdfcbc185860ab"
+    }
+  ],
+  "status": false,
+  "createdAt": {
+    "$date": "2025-03-07T00:34:14.819Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-08T04:42:31.263Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67ca3fcf92cdfcbc185860af"
+  },
+  "name": "Gamer",
+  "description": "Piezas de computadoras de alta gama",
+  "productos": [
+    {
+      "$oid": "67c90b5ca4041d9bfa357ec9"
+    },
+    {
+      "$oid": "67ca3f6292cdfcbc185860ab"
+    }
+  ],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T00:37:35.952Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T00:37:35.952Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67cb96519b779d03585ed340"
+  },
+  "name": "Sin categoria",
+  "description": "Productos sin categoría",
+  "productos": [],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-08T00:58:57.622Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-08T00:58:57.622Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67cbc86d46f2cdcbf9e5ca40"
+  },
+  "name": "Musicales",
+  "description": "Instrumentos musicales",
+  "productos": [
+    {
+      "$oid": "67cb23995e21eefdd60b8887"
+    },
+    {
+      "$oid": "67cb23a75e21eefdd60b888a"
+    }
+  ],
+  "status": false,
+  "createdAt": {
+    "$date": "2025-03-08T04:32:45.298Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-08T05:03:45.806Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67cbcc7822ae03bf7dd20734"
+  },
+  "name": "Sin categoría",
+  "description": "Productos sin categoría",
+  "productos": [
+    {
+      "$oid": "67cbd0a805b149f77e3de98b"
+    },
+    {
+      "$oid": "67cbd0f805b149f77e3de98f"
+    }
+  ],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-08T04:50:00.084Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-08T05:12:34.188Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67cbd10505b149f77e3de994"
+  },
+  "name": "Utiles",
+  "description": "cosas de colegio",
+  "productos": [
+    {
+      "$oid": "67cbd0a805b149f77e3de98b"
+    },
+    {
+      "$oid": "67cbd0f805b149f77e3de98f"
+    }
+  ],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-08T05:09:25.934Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-08T05:12:34.176Z"
   }
 }]

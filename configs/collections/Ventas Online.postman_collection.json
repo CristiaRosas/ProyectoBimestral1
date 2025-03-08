@@ -47,7 +47,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"jonas@gmail.com\",\r\n  \"password\": \"87654321\"\r\n}",
+							"raw": "{\r\n  \"email\": \"jonas@gmail.com\",\r\n  \"password\": \"87654321\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -78,7 +78,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"email\": \"crosas@gmail.com\",\r\n  \"password\": \"12345678\"\r\n}",
+							"raw": "{\r\n  \"email\": \"esantos@gmail.com\",\r\n  \"password\": \"12345678\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -165,13 +165,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzczNmJlZDQ5Mjk4YjMwNWM2YTQiLCJpYXQiOjE3NDEzOTM5NjQsImV4cCI6MTc0MTM5NzU2NH0.VJk8fbp9-0-9Rf3NtHDOcYkhrGKvvrVbbe3MbZGS_Sk",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzczNmJlZDQ5Mjk4YjMwNWM2YTQiLCJpYXQiOjE3NDE0MDc4MzIsImV4cCI6MTc0MTQxMTQzMn0.wEhuKr_ThYuEDGGdQUeWDpizzn6VoTX06cYh-_SXawk",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Jonathan\",\r\n  \"surname\": \"Alvarez\",\r\n  \"username\": \"jonas\",\r\n  \"email\": \"jonas@gmail.com\"\r\n}",
+							"raw": "{\r\n  \"name\": \"Jonathan\",\r\n  \"surname\": \"Alvarez\",\r\n  \"username\": \"Jaguilar\",\r\n  \"email\": \"jonas@gmail.com\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -278,12 +278,12 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDA5ODUxNzQsImV4cCI6MTc0MDk4ODc3NH0.RsE1g-sM7ZPmW-aiXkK3-3zR406JtkZ1WxiVkY_Q4Q4",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzdlNDRlN2FlMmEwMjUwNGMwZWYiLCJpYXQiOjE3NDE0MDgyMzgsImV4cCI6MTc0MTQxMTgzOH0.AbVTgJBlDfMq75A0ysCvyolPKlvkzktQkBQvpcoN-V0",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3003/Ventas/v1/users/deleteUser/67c5380b4e7ae2a02504c0f7",
+							"raw": "http://localhost:3003/Ventas/v1/users/deleteUser/67c537e44e7ae2a02504c0ef",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -294,7 +294,7 @@
 								"v1",
 								"users",
 								"deleteUser",
-								"67c5380b4e7ae2a02504c0f7"
+								"67c537e44e7ae2a02504c0ef"
 							]
 						}
 					},
@@ -312,13 +312,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzNjU2MDYsImV4cCI6MTc0MTM2OTIwNn0.uhzfYjQ4vlTp0JjC44H5aYpHk5XQMxBWSK1CayHi4gc",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzdlNDRlN2FlMmEwMjUwNGMwZWYiLCJpYXQiOjE3NDE0MDgzNjAsImV4cCI6MTc0MTQxMTk2MH0.HrqwZ7wXiMEZVMIrHRuyBgvD_IB10ueuvrik4-c5oW8",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Estaño para soldar\",  //nombre del producto\r\n  \"description\": \"Electrónicos\", //nombre de la categoria\r\n  \"price\": 20.50,\r\n  \"stock\": 1\r\n}",
+							"raw": "{\r\n  \"name\": \"Goma\",  //nombre del producto\r\n  \"description\": \"pegamento\", //nombre de la categoria\r\n  \"price\": 20.50,\r\n  \"stock\": 1\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -349,7 +349,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzOTMxMTMsImV4cCI6MTc0MTM5NjcxM30.EOVnM-slf7YsheboLKFUGL2iPAm5wGjbeNsuBiS-PZQ",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzdlNDRlN2FlMmEwMjUwNGMwZWYiLCJpYXQiOjE3NDE0MDgzNjAsImV4cCI6MTc0MTQxMTk2MH0.HrqwZ7wXiMEZVMIrHRuyBgvD_IB10ueuvrik4-c5oW8",
 								"type": "text"
 							}
 						],
@@ -435,13 +435,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzOTMxMTMsImV4cCI6MTc0MTM5NjcxM30.EOVnM-slf7YsheboLKFUGL2iPAm5wGjbeNsuBiS-PZQ",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzdlNDRlN2FlMmEwMjUwNGMwZWYiLCJpYXQiOjE3NDE0MTA4OTMsImV4cCI6MTc0MTQxNDQ5M30.0dJfMNxE9jcnwVJxN1UKnvlnnagmyeEwLvl0Ipxj8xw",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Samsung S22 plus\",\r\n  \"description\": \"Celular\",\r\n  \"price\": 300.99,\r\n  \"stock\": 3\r\n}",
+							"raw": "{\r\n  \"name\": \"Samsung S22 ultra\",\r\n  \"description\": \"Celular\",\r\n  \"price\": 300.99,\r\n  \"stock\": 3\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -472,12 +472,12 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzOTMxMTMsImV4cCI6MTc0MTM5NjcxM30.EOVnM-slf7YsheboLKFUGL2iPAm5wGjbeNsuBiS-PZQ",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzdlNDRlN2FlMmEwMjUwNGMwZWYiLCJpYXQiOjE3NDE0MTA4OTMsImV4cCI6MTc0MTQxNDQ5M30.0dJfMNxE9jcnwVJxN1UKnvlnnagmyeEwLvl0Ipxj8xw",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3003/Ventas/v1/productos/deleteProduct/67c90e3be17c1ac7293b765d",
+							"raw": "http://localhost:3003/Ventas/v1/productos/deleteProduct/67cb23a75e21eefdd60b888a",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -488,7 +488,7 @@
 								"v1",
 								"productos",
 								"deleteProduct",
-								"67c90e3be17c1ac7293b765d"
+								"67cb23a75e21eefdd60b888a"
 							]
 						}
 					},
@@ -506,13 +506,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzNjU2MDYsImV4cCI6MTc0MTM2OTIwNn0.uhzfYjQ4vlTp0JjC44H5aYpHk5XQMxBWSK1CayHi4gc",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzdlNDRlN2FlMmEwMjUwNGMwZWYiLCJpYXQiOjE3NDE0MDgzNjAsImV4cCI6MTc0MTQxMTk2MH0.HrqwZ7wXiMEZVMIrHRuyBgvD_IB10ueuvrik4-c5oW8",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Electrónicos\",  //colocar el nombre de la categoria\r\n    \"description\": \"Productos electrónicos diversos\",  //agregar la descripcion del producto\r\n    \"productos\": [\"Coutin\", \"Estaño para soldar\"] // agregar los productos existentes a la categoria\r\n}",
+							"raw": "{\r\n    \"name\": \"Utiles\",  //colocar el nombre de la categoria\r\n    \"description\": \"cosas de colegio\",  //agregar la descripcion del producto\r\n    \"productos\": [\"Cuaderno\", \"Goma\"] // agregar los productos existentes a la categoria\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -612,13 +612,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzOTQ4ODIsImV4cCI6MTc0MTM5ODQ4Mn0.nCWfud5FKuH5dr2uPEusKQI1spdO0EbJuMQ-nZ4cbxw",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzdlNDRlN2FlMmEwMjUwNGMwZWYiLCJpYXQiOjE3NDE0MDgzNjAsImV4cCI6MTc0MTQxMTk2MH0.HrqwZ7wXiMEZVMIrHRuyBgvD_IB10ueuvrik4-c5oW8",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Productos para Gamers\",  //nuevo nombre de la categoria\r\n    \"description\": \"hardware y perifericos\",  //nueva descripcion\r\n    \"productos\": [\"Procesador i9 14100K\", \"Grafica RTX 4060\"]  //agregar los productos de esa categoria\r\n}",
+							"raw": "{\r\n    \"name\": \"Perifericos gamers\",  //nuevo nombre de la categoria\r\n    \"description\": \"hardware y perifericos\",  //nueva descripcion\r\n    \"productos\": [\"Procesador i9 14100K\", \"Grafica RTX 4060\"]  //agregar los productos de esa categoria\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -678,12 +678,12 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzOTQ4ODIsImV4cCI6MTc0MTM5ODQ4Mn0.nCWfud5FKuH5dr2uPEusKQI1spdO0EbJuMQ-nZ4cbxw",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzdlNDRlN2FlMmEwMjUwNGMwZWYiLCJpYXQiOjE3NDE0MDgzNjAsImV4cCI6MTc0MTQxMTk2MH0.HrqwZ7wXiMEZVMIrHRuyBgvD_IB10ueuvrik4-c5oW8",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3003/Ventas/v1/categorias/67ca3f0692cdfcbc185860a3",
+							"raw": "http://localhost:3003/Ventas/v1/categorias/67cbd10505b149f77e3de994",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -693,7 +693,7 @@
 								"Ventas",
 								"v1",
 								"categorias",
-								"67ca3f0692cdfcbc185860a3"
+								"67cbd10505b149f77e3de994"
 							]
 						}
 					},
@@ -781,13 +781,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzczNmJlZDQ5Mjk4YjMwNWM2YTQiLCJpYXQiOjE3NDEzOTU5MzAsImV4cCI6MTc0MTM5OTUzMH0.2R1w-nPOujXGqo2bNB3szwDna951UFfKma0W5oog8e0",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzczNmJlZDQ5Mjk4YjMwNWM2YTQiLCJpYXQiOjE3NDE0MTExODQsImV4cCI6MTc0MTQxNDc4NH0.Sp4ALpbV_X5CrcOtiPOOXUSnkcwLWUmeWmfZ5LVe-QM",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"productoId\": \"67ca3ef092cdfcbc1858609c\",\r\n    \"quantity\": 1\r\n}",
+							"raw": "{\r\n    \"productName\": \"Smartphone\",\r\n    \"quantity\": 1\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -818,7 +818,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzczNmJlZDQ5Mjk4YjMwNWM2YTQiLCJpYXQiOjE3NDEzOTU5MzAsImV4cCI6MTc0MTM5OTUzMH0.2R1w-nPOujXGqo2bNB3szwDna951UFfKma0W5oog8e0",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzczNmJlZDQ5Mjk4YjMwNWM2YTQiLCJpYXQiOjE3NDE0MDcwNjMsImV4cCI6MTc0MTQxMDY2M30.5T3WZfbbRuDTufMD5LUb1e61rLG8L2djBiGFE5FicIU",
 								"type": "text"
 							}
 						],
@@ -874,7 +874,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzczNmJlZDQ5Mjk4YjMwNWM2YTQiLCJpYXQiOjE3NDEzOTU5MzAsImV4cCI6MTc0MTM5OTUzMH0.2R1w-nPOujXGqo2bNB3szwDna951UFfKma0W5oog8e0",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2NiYzU3NmUxZTVhZmU5ZGVlYzc2OTciLCJpYXQiOjE3NDE0MTEyNDUsImV4cCI6MTc0MTQxNDg0NX0.fvYBZauYA1WqMgPcw5q2CsWikiYXFQxXKxaLzbTWiWU",
 								"type": "text"
 							}
 						],
@@ -902,7 +902,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzczNmJlZDQ5Mjk4YjMwNWM2YTQiLCJpYXQiOjE3NDEzOTU5MzAsImV4cCI6MTc0MTM5OTUzMH0.2R1w-nPOujXGqo2bNB3szwDna951UFfKma0W5oog8e0",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzczNmJlZDQ5Mjk4YjMwNWM2YTQiLCJpYXQiOjE3NDE0MTE4MjEsImV4cCI6MTc0MTQxNTQyMX0.62w_fBTAzLMqFssJ3MKjhxsqAo2nmm3RemgKQT-QYwo",
 								"type": "text"
 							}
 						],
@@ -919,6 +919,34 @@
 								"carrito",
 								"historial",
 								"67cb9a055e02f8f2402c1c32"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MasVendidos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzczNmJlZDQ5Mjk4YjMwNWM2YTQiLCJpYXQiOjE3NDE0MTE4MjEsImV4cCI6MTc0MTQxNTQyMX0.62w_fBTAzLMqFssJ3MKjhxsqAo2nmm3RemgKQT-QYwo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3003/Ventas/v1/carrito/frecuenciaCompra",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"Ventas",
+								"v1",
+								"carrito",
+								"frecuenciaCompra"
 							]
 						}
 					},

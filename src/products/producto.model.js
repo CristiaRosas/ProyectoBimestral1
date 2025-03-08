@@ -29,6 +29,11 @@ const ProductSchema = Schema({
         type: Number,
         default: 0
     },
+    relacion: {
+        type: Schema.Types.ObjectId,
+        ref: 'Category',
+        required: false,
+    },
 
     outOfStock: {
         type: Boolean,

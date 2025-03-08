@@ -3,6 +3,16 @@ import Producto from "./producto.model.js";
 
 export const saveProducto = async (req, res) => {
   try {
+      const { name } = req.body;
+      const productoExistente = await Producto.findOne({ name: name.trim() });
+
+      if (productoExistente) {
+          return res.status(400).json({
+              success: false,
+              message: "Ya existe un producto con ese nombre",
+          });
+      }
+
       const producto = new Producto(req.body);
       await producto.save();
 
@@ -17,7 +27,8 @@ export const getProductos = async (req = request, res = response) => {
       const { limite = 10, desde = 0 } = req.query;
       const productos = await Producto.find({ estado: true })
           .skip(Number(desde))
-          .limit(Number(limite));
+          .limit(Number(limite))
+          .populate('relacion', 'name description');
 
       res.status(200).json({
           success: true,

@@ -52,12 +52,20 @@ export const  login = async(req, res) => {
 
 export const register = async (req, res) => {
     try {
+        const { email } = req.body;
+        const existingUser = await Usuario.findOne({ email });
+
+        if (existingUser) {
+            return res.status(400).json({
+                message: "El correo electrónico ya está registrado en la base de datos",
+            });
+        }
+
         const data = req.body;
 
-        const encryptedPassword = await hash (data.password);
+        const encryptedPassword = await hash(data.password);
 
         const user = await Usuario.create({
-            
             name: data.name,
             surname: data.surname,
             username: data.username,
@@ -70,7 +78,7 @@ export const register = async (req, res) => {
         await user.save();
 
         return res.status(201).json({
-            message: `El usuario ${user.name} fue registrado con exito!`,
+            message: `El usuario ${user.name} fue registrado con éxito!`,
             userDetails: {
                 email: user.email,
             },

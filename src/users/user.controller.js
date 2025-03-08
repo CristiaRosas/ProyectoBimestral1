@@ -48,6 +48,13 @@ export const updateUser = async (req, res = response) => {
     try {
         const { id } = req.params;
         const { password, ...data } = req.body;
+
+        if (req.usuario.id !== id) {
+            return res.status(403).json({
+                success: false,
+                msg: "No tienes permisos para modificar este usuario, verifica si el token es del dueño del usuario"
+            });
+        }
         
         if (password) data.password = await hash(password);
         
@@ -93,17 +100,35 @@ export const updatePassword = async (req, res = response) => {
 
 export const deleteUser = async (req, res) => {
     try {
-        const user = await User.findByIdAndUpdate(req.params.id, { estado: false }, { new: true });
-        res.status(200).json({ 
-            success: true, 
-            msg: "Usuario desactivado con éxito", 
-            user 
+        const { id } = req.params;
+
+        if (req.usuario.id !== id) {
+            return res.status(403).json({
+                success: false,
+                msg: "No tienes permisos para eliminar este usuario, verifica si el token es del dueño del usuario"
+            });
+        }
+
+        const user = await User.findByIdAndUpdate(id, { estado: false }, { new: true });
+        
+
+        if (!user) {
+            return res.status(404).json({
+                success: false,
+                msg: "Usuario no encontrado"
+            });
+        }
+
+        res.status(200).json({
+            success: true,
+            msg: "Usuario desactivado con éxito",
+            user
         });
     } catch (error) {
-        res.status(500).json({ 
-            success: false, 
-            msg: "Error al desactivar usuario", 
-            error 
+        res.status(500).json({
+            success: false,
+            msg: "Error al desactivar usuario",
+            error
         });
     }
 };
@@ -132,4 +157,4 @@ export const updateStatus = async (req, res = response) => {
             error 
         });
     }
-};
+}

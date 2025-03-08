@@ -4,14 +4,23 @@ import Factura from '../facturas/factura.model.js';
 
 export const addProductToCar = async (req, res) => {
     try {
-        const { productoId, quantity } = req.body;
+        const { productName, quantity } = req.body;
         const userId = req.usuario.id;
 
-        const product = await Product.findById(productoId);
+        // Buscar el producto por nombre
+        const product = await Product.findOne({ name: productName });
         if (!product) {
             return res.status(404).json({ 
                 success: false, 
                 message: "Producto no encontrado." 
+            });
+        }
+
+        // Validación: Si el stock es 0, no permitir agregar el producto
+        if (product.stock === 0) {
+            return res.status(400).json({
+                success: false,
+                message: "Este producto está agotado."
             });
         }
 
@@ -20,12 +29,25 @@ export const addProductToCar = async (req, res) => {
             car = new Car({ user: userId, productos: [] });
         }
 
-        const productIndex = car.productos.findIndex(item => item.product.toString() === productoId);
+        const productIndex = car.productos.findIndex(item => item.product.toString() === product._id.toString());
+
+        let totalQuantity = quantity;
+        if (productIndex > -1) {
+            totalQuantity = car.productos[productIndex].quantity + quantity; 
+        }
+
+        if (totalQuantity > product.stock) {
+            return res.status(400).json({
+                success: false,
+                message: `Solo hay ${product.stock} unidades disponibles.`
+            });
+        }
 
         if (productIndex > -1) {
             car.productos[productIndex].quantity += quantity;
         } else {
-            car.productos.push({ product: productoId, quantity });
+
+            car.productos.push({ product: product._id, quantity });
         }
 
         await car.save();
@@ -132,10 +154,12 @@ export const pagarCar = async (req, res) => {
 
         await Car.findOneAndDelete({ user: userId });
 
+        const detailedFactura = await Factura.findById(factura._id).populate("products.product", "name price");
+
         res.status(200).json({ 
             success: true, 
             message: "Pago completado.", 
-            factura 
+            factura: detailedFactura 
         });
     } catch (error) {
         console.error("Error al pagar el carrito:", error);
@@ -145,6 +169,51 @@ export const pagarCar = async (req, res) => {
         });
     }
 };
+
+export const getMostPurchasedProducts = async (req, res) => {
+    try {
+        const facturas = await Factura.find().populate("products.product");
+
+        if (!facturas.length) {
+            return res.status(404).json({ 
+                success: false, 
+                message: "No se encontraron compras en el historial." 
+            });
+        }
+
+        const productCount = {};
+
+        facturas.forEach(factura => {
+            factura.products.forEach(item => {
+                const productId = item.product._id.toString();
+                if (productCount[productId]) {
+                    productCount[productId].count += item.quantity;
+                } else {
+                    productCount[productId] = {
+                        product: item.product,
+                        count: item.quantity
+                    };
+                }
+            });
+        });
+
+        const sortedProducts = Object.values(productCount).sort((a, b) => b.count - a.count);
+
+        res.status(200).json({ 
+            success: true, 
+            message: "Productos más comprados a nivel global.",
+            products: sortedProducts
+        });
+    } catch (error) {
+        console.error("Error al obtener los productos más comprados:", error);
+        res.status(500).json({ 
+            success: false, 
+            message: "Error al obtener los productos más comprados.", 
+            error: error.message 
+        });
+    }
+};
+
 
 export const historial = async (req, res) => {
     try {

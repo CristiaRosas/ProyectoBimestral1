@@ -2,18 +2,18 @@
   "_id": {
     "$oid": "67c9086ae2eef7e48210beff"
   },
-  "name": "Samsung S22 plus",
+  "name": "Samsung S22 ultra",
   "description": "Celular",
   "price": 300.99,
   "stock": 3,
-  "sold": 0,
+  "sold": 1,
   "outOfStock": false,
   "estado": true,
   "createdAt": {
     "$date": "2025-03-06T02:28:58.232Z"
   },
   "updatedAt": {
-    "$date": "2025-03-06T02:52:15.914Z"
+    "$date": "2025-03-08T05:15:49.175Z"
   }
 },
 {
@@ -31,7 +31,7 @@
     "$date": "2025-03-06T02:41:32.259Z"
   },
   "updatedAt": {
-    "$date": "2025-03-07T06:02:01.445Z"
+    "$date": "2025-03-08T04:42:31.267Z"
   }
 },
 {
@@ -49,7 +49,7 @@
     "$date": "2025-03-06T02:53:47.141Z"
   },
   "updatedAt": {
-    "$date": "2025-03-06T02:54:15.558Z"
+    "$date": "2025-03-08T00:25:00.003Z"
   }
 },
 {
@@ -59,15 +59,15 @@
   "name": "Laptop",
   "description": "Productos electrónicos diversos",
   "price": 450.5,
-  "stock": 3,
-  "sold": 0,
+  "stock": 0,
+  "sold": 3,
   "outOfStock": false,
   "estado": true,
   "createdAt": {
     "$date": "2025-03-07T00:33:52.265Z"
   },
   "updatedAt": {
-    "$date": "2025-03-07T00:33:52.265Z"
+    "$date": "2025-03-08T05:20:11.360Z"
   }
 },
 {
@@ -103,7 +103,7 @@
     "$date": "2025-03-07T00:35:46.986Z"
   },
   "updatedAt": {
-    "$date": "2025-03-07T00:35:46.986Z"
+    "$date": "2025-03-08T04:42:31.267Z"
   }
 },
 {
@@ -139,7 +139,7 @@
     "$date": "2025-03-07T16:49:29.847Z"
   },
   "updatedAt": {
-    "$date": "2025-03-07T16:49:29.847Z"
+    "$date": "2025-03-08T05:03:45.812Z"
   }
 },
 {
@@ -157,6 +157,48 @@
     "$date": "2025-03-07T16:49:43.274Z"
   },
   "updatedAt": {
-    "$date": "2025-03-07T16:49:43.274Z"
+    "$date": "2025-03-08T05:14:57.745Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67cbd0a805b149f77e3de98b"
+  },
+  "name": "Cuaderno",
+  "description": "de lineas",
+  "price": 20.5,
+  "stock": 1,
+  "sold": 0,
+  "outOfStock": false,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-08T05:07:52.167Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-08T05:12:34.182Z"
+  },
+  "relacion": {
+    "$oid": "67cbcc7822ae03bf7dd20734"
+  }
+},
+{
+  "_id": {
+    "$oid": "67cbd0f805b149f77e3de98f"
+  },
+  "name": "Goma",
+  "description": "pegamento",
+  "price": 20.5,
+  "stock": 1,
+  "sold": 0,
+  "outOfStock": false,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-08T05:09:12.974Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-08T05:12:34.182Z"
+  },
+  "relacion": {
+    "$oid": "67cbcc7822ae03bf7dd20734"
   }
 }]

@@ -1,5 +1,6 @@
 import { response, request }  from "express";
 import Producto from "./producto.model.js";
+import Factura from "../facturas/factura.model.js";
 
 export const saveProducto = async (req, res) => {
   try {
@@ -155,4 +156,73 @@ export const deleteProduct = async (req, res) => {
          error 
         });
     }
+};
+
+export const getMostPurchasedProducts = async (req, res) => {
+  try {
+      const facturas = await Factura.find().populate("products.product");
+
+      if (!facturas.length) {
+          return res.status(404).json({ 
+              success: false, 
+              message: "No se encontraron compras en el historial." 
+          });
+      }
+
+      const productCount = {};
+
+      facturas.forEach(factura => {
+          factura.products.forEach(item => {
+              const productId = item.product._id.toString();
+              if (productCount[productId]) {
+                  productCount[productId].count += item.quantity; 
+              } else {
+                  productCount[productId] = {
+                      product: item.product,
+                      count: item.quantity
+                  };
+              }
+          });
+      });
+
+      const sortedProducts = Object.values(productCount).sort((a, b) => b.count - a.count);
+
+      res.status(200).json({ 
+          success: true, 
+          message: "Productos más comprados a nivel global.",
+          products: sortedProducts
+      });
+  } catch (error) {
+      console.error("Error al obtener los productos más comprados:", error);
+      res.status(500).json({ 
+          success: false, 
+          message: "Error al obtener los productos más comprados.", 
+          error: error.message 
+      });
+  }
+};
+
+export const getOutOfStockProducts = async (req, res) => {
+  try {
+      const productosOutOfStock = await Producto.find({ stock: 0 });
+
+      if (productosOutOfStock.length === 0) {
+          return res.status(404).json({ 
+              success: false, 
+              message: "No hay productos con stock 0." 
+          });
+      }
+      res.status(200).json({
+          success: true,
+          message: "Productos con stock 0.",
+          productos: productosOutOfStock
+      });
+  } catch (error) {
+      console.error("Error al obtener productos con stock 0:", error);
+      res.status(500).json({
+          success: false,
+          message: "Error al obtener productos con stock 0.",
+          error: error.message
+      });
+  }
 };

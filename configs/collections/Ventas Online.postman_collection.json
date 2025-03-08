@@ -493,6 +493,50 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "MasVendido",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/Ventas/v1/productos/ObtenerMasVendidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"Ventas",
+								"v1",
+								"productos",
+								"ObtenerMasVendidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "StockCero",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/Ventas/v1/productos/ObtenerStockCero",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"Ventas",
+								"v1",
+								"productos",
+								"ObtenerStockCero"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -731,43 +775,6 @@
 						}
 					},
 					"response": []
-				},
-				{
-					"name": "EditarFactura",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzZlM2VmODQzNDAwMGM5ODhkZTQiLCJpYXQiOjE3NDEzNjU2MDYsImV4cCI6MTc0MTM2OTIwNn0.uhzfYjQ4vlTp0JjC44H5aYpHk5XQMxBWSK1CayHi4gc",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"productos\": [\r\n        {\r\n            \"producto\": \"67c90b5ca4041d9bfa357ec9\",\r\n            \"quantity\": 2\r\n        }\r\n    ],\r\n    \"status\": \"Pendiente\"\r\n\r\n    //no jala, y buguea el programa\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:3003/Ventas/v1/facturasupdateFactura/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3003",
-							"path": [
-								"Ventas",
-								"v1",
-								"facturasupdateFactura",
-								""
-							]
-						}
-					},
-					"response": []
 				}
 			]
 		},
@@ -919,34 +926,6 @@
 								"carrito",
 								"historial",
 								"67cb9a055e02f8f2402c1c32"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "MasVendidos",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1MzczNmJlZDQ5Mjk4YjMwNWM2YTQiLCJpYXQiOjE3NDE0MTE4MjEsImV4cCI6MTc0MTQxNTQyMX0.62w_fBTAzLMqFssJ3MKjhxsqAo2nmm3RemgKQT-QYwo",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "http://localhost:3003/Ventas/v1/carrito/frecuenciaCompra",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3003",
-							"path": [
-								"Ventas",
-								"v1",
-								"carrito",
-								"frecuenciaCompra"
 							]
 						}
 					},

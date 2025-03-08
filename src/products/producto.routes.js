@@ -1,6 +1,6 @@
 import {Router} from "express";
 import { check } from "express-validator";
-import { saveProducto, getProductoById, getProductoByName, updateProducto, deleteProduct, getProductos } from "./producto.controller.js";
+import { saveProducto, getProductoById, getProductoByName, updateProducto, deleteProduct, getProductos, getMostPurchasedProducts ,getOutOfStockProducts } from "./producto.controller.js";
 import { existeCategoryById, existeProductByName } from "../helpers/db.validator.js";
 import { validarCampos } from "../middlewares/validar-campos.js";
 import { validarJWT } from "../middlewares/validar-jwt.js";
@@ -71,6 +71,16 @@ router.delete(
         validarCampos
     ],
     deleteProduct
+)
+
+router.get(
+    "/ObtenerMasVendidos",
+    getMostPurchasedProducts
+)
+
+router.get(
+    "/ObtenerStockCero",
+    getOutOfStockProducts
 )
 
 export default router;

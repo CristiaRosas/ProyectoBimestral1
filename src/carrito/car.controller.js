@@ -7,6 +7,7 @@ export const addProductToCar = async (req, res) => {
         const { productName, quantity } = req.body;
         const userId = req.usuario.id;
 
+        // Buscar el producto por nombre
         const product = await Product.findOne({ name: productName });
         if (!product) {
             return res.status(404).json({ 
@@ -15,6 +16,7 @@ export const addProductToCar = async (req, res) => {
             });
         }
 
+        // Validación: Si el stock es 0, no permitir agregar el producto
         if (product.stock === 0) {
             return res.status(400).json({
                 success: false,

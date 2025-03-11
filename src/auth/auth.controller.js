@@ -91,3 +91,27 @@ export const register = async (req, res) => {
         });
     }
 };
+
+const createUserAdmin = async (name, surname, username, email, password, role) => {
+    try {
+        if (role === "ADMIN_ROLE" && await Usuario.exists({ role: "ADMIN_ROLE" })) return null;
+        
+        const newUser = new Usuario({
+            name, 
+            surname, 
+            username, 
+            email, 
+            password: await hash(password),
+            role
+        });
+        
+        await newUser.save();
+        console.log("Usuario admin por defecto creado exitosamente");
+        return newUser;
+    } catch (error) {
+        console.error("Error creando usuario admin:", error);
+        return null;
+    }
+};
+
+createUserAdmin("Cristian", "Rosas", "Crosas", "crosas@gmail.com", "12345678", "ADMIN_ROLE");
